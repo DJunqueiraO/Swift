@@ -11,6 +11,11 @@ import RxCocoa
 
 final class RxView: UIView, UIScrollViewDelegate {
     private let rxViewModel = RxViewModel()
+    private let imageView: UIImageView = {
+        let imageView = Create.element.imageView()
+        imageView.backgroundColor = .jokenpoPink
+        return imageView
+    }()
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = .systemPurple
@@ -35,16 +40,26 @@ final class RxView: UIView, UIScrollViewDelegate {
 extension RxView: Setup {
     func configure() {
         backgroundColor = .magenta
-        addSubview(tableView)
+        addSubviews([tableView, imageView])
     }
     func constrain() {
         tableView.enableAutoLayout
-            .constraint(attributes: [.top, .leading, .trailing, .bottom], to: safeAreaLayoutGuide)
+            .constraint(attributes: [.top, .leading, .trailing], to: safeAreaLayoutGuide)
+            .constraint(attributesAttributes: [.bottom: .centerY])
+        imageView.enableAutoLayout
+            .constraint(attributes: [.bottom, .centerX], to: safeAreaLayoutGuide)
+            .constraint(attributesAttributes: [.top: .centerY])
+            .constraint(attribute: .width, multiplier: 1/3)
     }
 }
 
 extension RxView: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? RxTableViewCell,
+              let image = cell.item?.image else {return}
+        imageView.image = UIImage(named: image)
+    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.frame.height*0.1
+        return tableView.frame.height*0.2
     }
 }
