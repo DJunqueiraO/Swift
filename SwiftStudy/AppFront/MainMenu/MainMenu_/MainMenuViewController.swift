@@ -6,16 +6,9 @@
 //
 
 import UIKit
-import SwiftUI
 
 final class MainMenuViewController: UIViewController {
-    private let viewControllers = [AccessViewController(),
-                                   DataSourceViewController(),
-                                   ArrayViewController(),
-                                   SpinnerViewController(),
-                                   LoginViewController(),
-//                                   UserRouter.start().entry as Any,
-                                   FakeBookViewController()]
+    private var mainMenuViewModel = MainMenuViewModel()
     private lazy var table: (view: UITableView, cellIdedntifier: String) = {
         let tableView = UITableView()
         tableView.backgroundColor = .red
@@ -52,22 +45,15 @@ extension MainMenuViewController: Setup {
 extension MainMenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.isUserInteractionEnabled = false
-//        guard let viewController = viewControllers[indexPath.row] as? UIViewController else {return}
-        navigationController?.pushViewController(viewControllers[indexPath.row], animated: true)
+        guard let viewController = mainMenuViewModel.viewController(indexPath.row) else {return}
+        navigationController?.pushViewController(viewController, animated: true)
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewControllers.count
+        return mainMenuViewModel.numberOfViewControllers
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: table.cellIdedntifier,
-                                                 for: indexPath)
-        cell.backgroundColor = .yellow
-//        guard let viewController = viewControllers[indexPath.row] as? UIViewController else {return cell}
-        let label = Create.element.label("\(type(of: viewControllers[indexPath.row]))".removeLast(13))
-        label.textColor = .black
-        cell.contentView.addSubview(label)
-        label.enableAutoLayout
-            .constraint(attributes: [.centerX, .centerY])
+        let cell = tableView.dequeueReusableCell(withIdentifier: table.cellIdedntifier, for: indexPath)
+        mainMenuViewModel.setup(cell, cellForRowAt: indexPath)
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

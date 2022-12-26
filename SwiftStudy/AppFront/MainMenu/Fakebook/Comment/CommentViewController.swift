@@ -24,6 +24,7 @@ final class CommentViewController: UIViewController {
 
 extension CommentViewController: Setup {
     func configure() {
+        title = "\(type(of: self))".removeLast(13)
         view.backgroundColor = .reverseDark
         view.addSubview(postStackView)
     }
