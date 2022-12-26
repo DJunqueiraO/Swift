@@ -10,21 +10,17 @@ import RxSwift
 import RxCocoa
 
 final class RxView: UIView, UIScrollViewDelegate {
-    private let items = Observable.just(["Potato", "Banana", "Carrot", "Tomato"])
-    private let disposeBag = DisposeBag()
+    private let rxViewModel = RxViewModel()
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = .systemPurple
         let identifier = "Cell"
-        items.bind(to: tableView.rx.items(cellIdentifier: identifier)) {tableView, item, cell in
-            let label = Create.element.label(item)
-            cell.contentView.addSubview(label)
-            label.enableAutoLayout
-                .constraint(attributes: [.centerY, .centerX])
-        }.disposed(by: disposeBag)
-        tableView.rx.setDelegate(self).disposed(by: disposeBag)
-        tableView.register(UITableViewCell.self,
-                           forCellReuseIdentifier: identifier)
+        rxViewModel.items.bind(to: tableView.rx.items(cellIdentifier: identifier)) {tableView, item, cell in
+            guard let cell = cell as? RxTableViewCell else {return}
+            cell.item = item
+        }.disposed(by: rxViewModel.disposeBag)
+        tableView.rx.setDelegate(self).disposed(by: rxViewModel.disposeBag)
+        tableView.register(RxTableViewCell.self, forCellReuseIdentifier: identifier)
         return tableView
     }()
     override init(frame: CGRect) {

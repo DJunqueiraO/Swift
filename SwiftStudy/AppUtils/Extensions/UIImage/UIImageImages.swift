@@ -21,4 +21,9 @@ extension UIImage {
     class var griffith: UIImage? {UIImage(named: "Griffith")}
     class var godo: UIImage? {UIImage(named: "Godo")}
     class var dragonSlayer: UIImage? {UIImage(named: "DragonSlayer")}
+    class var stone: UIImage? {UIImage(named: "0")}
+    class var paper: UIImage? {UIImage(named: "1")}
+    class var scissors: UIImage? {UIImage(named: "2")}
+    class var lizard: UIImage? {UIImage(named: "3")}
+    class var spok: UIImage? {UIImage(named: "4")}
 }
