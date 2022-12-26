@@ -7,7 +7,16 @@
 
 import UIKit
 
+protocol FakeBookViewDelegate: AnyObject {
+    func fakeBookView(willComment post: FakeBookPost?) -> UIAction?
+}
+
+extension FakeBookViewDelegate {
+    func fakeBookView(willComment post: FakeBookPost?) -> UIAction? {return nil}
+}
+
 final class FakeBookView: UIView {
+    weak var delegate: FakeBookViewDelegate?
     private lazy var fakeBookViewModel: FakeBookViewModel = {
         let fakeBookViewModel = FakeBookViewModel()
         fakeBookViewModel.delegate = self
@@ -48,6 +57,9 @@ final class FakeBookView: UIView {
     private func createPostStackView(_ post: FakeBookPost?) {
         let postStackView = FakeBookPostStackView(frame: frame)
         postStackView.post = post
+        if let action = delegate?.fakeBookView(willComment: post) {
+            postStackView.buttonsStackView.commentButton.addAction(action, for: .touchUpInside)
+        }
         scroll.toScrollStackView.addArrangedSubview(postStackView)
     }
 }

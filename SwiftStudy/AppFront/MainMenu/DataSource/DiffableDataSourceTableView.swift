@@ -42,6 +42,7 @@ extension DiffableDataSourceTableView: Setup {
         backgroundColor = .reverseDark
         register(UITableViewCell.self, forCellReuseIdentifier: identifier)
         delegate = self
+        isUserInteractionEnabled = false
     }
 }
 

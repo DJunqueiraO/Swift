@@ -8,14 +8,14 @@
 import UIKit
 
 extension Create {
-    func alert(title: String?, message: String?,
-               buttonTitle: String? = nil,
-               preferredStyle: UIAlertController.Style = .alert) -> UIAlertController {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
-        alert.baseView.subviews.first?.backgroundColor = .weakDark
+    func alert(title: String?, message: String?, cancelButtonTitle: String? = nil) -> UIAlertController {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.baseView.subviews.first?.backgroundColor = .weakWhite
         alert.baseView.subviews.last?.removeFromSuperview()
         alert.baseView.tintColor = .label
-        if let buttonTitle = buttonTitle {alert.addAction(UIAlertAction(title: buttonTitle, style: .default))}
+        if let cancelButtonTitle = cancelButtonTitle {
+            alert.addAction(UIAlertAction(title: cancelButtonTitle, style: .cancel))
+        }
         return alert
     }
 }

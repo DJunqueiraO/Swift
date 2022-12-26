@@ -11,7 +11,7 @@ enum Section {case first}
 
 struct Video: Hashable {
     static let creator = "Josicleison"
-    static let creatorSister = "Josicleide"
+    let creatorSister = "Josicleide"
     var title: String
     var count: Int
     static func someTests() {
@@ -19,6 +19,6 @@ struct Video: Hashable {
         let vlog         = Video(title: "Mc Donalds", count: 15000)
 //        let tutorial     = Video(title: "UITableView Tutorial", count: 10000)
         print(Video.creator)
-        print(Video.creatorSister)
+        print(vlog.creatorSister)
     }
 }

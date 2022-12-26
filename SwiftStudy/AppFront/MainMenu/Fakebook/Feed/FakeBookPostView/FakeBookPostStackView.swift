@@ -19,10 +19,7 @@ final class FakeBookPostStackView: UIStackView {
             postContent.label.text = post?.description
         }
     }
-    private lazy var perfilStackView: FakeBookPostPerfilStackView = {
-        let perfilStackView = FakeBookPostPerfilStackView()
-        return perfilStackView
-    }()
+    private lazy var perfilStackView = FakeBookPostPerfilStackView()
     private lazy var postContent: (stackView: UIStackView, label: UILabel) = {
         let descriptionLabel = Create.element.label()
         descriptionLabel.font = UIFont.systemFont(ofSize: 15)
@@ -37,10 +34,7 @@ final class FakeBookPostStackView: UIStackView {
         postContentStackView.axis = .vertical
         return (stackView: postContentStackView, label: descriptionLabel)
     }()
-    private lazy var buttonsStackView: FakeBookPostButtonsStackView = {
-        let buttonsStackView = FakeBookPostButtonsStackView()
-        return buttonsStackView
-    }()
+    lazy var buttonsStackView = FakeBookPostButtonsStackView()
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()

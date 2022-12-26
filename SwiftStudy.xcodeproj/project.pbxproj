@@ -22,6 +22,8 @@
 		1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */; };
 		1D41398B294BBA2B005BFA16 /* SwiftUIPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */; };
 		1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */; };
+		1D41DBD52955D08E00C3C251 /* ArrayExercices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41DBD42955D08E00C3C251 /* ArrayExercices.swift */; };
+		1D41DBDA2955E9AF00C3C251 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41DBD92955E9AF00C3C251 /* CommentViewController.swift */; };
 		1D4B6BA42951E11000E22C00 /* FakeBookPostButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B6BA32951E11000E22C00 /* FakeBookPostButtons.swift */; };
 		1D4CDDF22954CEDC00F893BF /* CreateAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CDDF12954CEDC00F893BF /* CreateAlert.swift */; };
 		1D4CDDF52954CF0D00F893BF /* UIAlertControllerHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CDDF42954CF0D00F893BF /* UIAlertControllerHierarchy.swift */; };
@@ -34,6 +36,12 @@
 		1D66F434294D28AD00797CDF /* FakeBookPostsApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F433294D273D00797CDF /* FakeBookPostsApi.json */; };
 		1D66F436294D290500797CDF /* FakeBookStoriesApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F435294D290500797CDF /* FakeBookStoriesApi.json */; };
 		1D66F438294D29A300797CDF /* FakeBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F437294D29A300797CDF /* FakeBookViewModel.swift */; };
+		1DA01FFB295A02B200A28790 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA01FFA295A02B200A28790 /* RxCocoa */; };
+		1DA01FFD295A02B200A28790 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA01FFC295A02B200A28790 /* RxRelay */; };
+		1DA01FFF295A02B200A28790 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA01FFE295A02B200A28790 /* RxSwift */; };
+		1DA02001295A02F600A28790 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA02000295A02F600A28790 /* MainMenuViewModel.swift */; };
+		1DA02005295A07D600A28790 /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA02004295A07D600A28790 /* RxViewController.swift */; };
+		1DA02007295A101400A28790 /* RxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA02006295A101400A28790 /* RxView.swift */; };
 		1DA7C7F8294C9CCA009E1368 /* FakeBookPostStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7F7294C9CCA009E1368 /* FakeBookPostStackView.swift */; };
 		1DA7C7FF294CA92F009E1368 /* UIColorColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7FE294CA92F009E1368 /* UIColorColors.swift */; };
 		1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C800294CB27A009E1368 /* CreateStackView.swift */; };
@@ -97,6 +105,8 @@
 		1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerNavigate.swift; sourceTree = "<group>"; };
 		1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPreview.swift; sourceTree = "<group>"; };
 		1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D41DBD42955D08E00C3C251 /* ArrayExercices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExercices.swift; sourceTree = "<group>"; };
+		1D41DBD92955E9AF00C3C251 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		1D4B6BA32951E11000E22C00 /* FakeBookPostButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPostButtons.swift; sourceTree = "<group>"; };
 		1D4CDDF12954CEDC00F893BF /* CreateAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAlert.swift; sourceTree = "<group>"; };
 		1D4CDDF42954CF0D00F893BF /* UIAlertControllerHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerHierarchy.swift; sourceTree = "<group>"; };
@@ -109,6 +119,9 @@
 		1D66F433294D273D00797CDF /* FakeBookPostsApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FakeBookPostsApi.json; sourceTree = "<group>"; };
 		1D66F435294D290500797CDF /* FakeBookStoriesApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FakeBookStoriesApi.json; sourceTree = "<group>"; };
 		1D66F437294D29A300797CDF /* FakeBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookViewModel.swift; sourceTree = "<group>"; };
+		1DA02000295A02F600A28790 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
+		1DA02004295A07D600A28790 /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
+		1DA02006295A101400A28790 /* RxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxView.swift; sourceTree = "<group>"; };
 		1DA7C7F7294C9CCA009E1368 /* FakeBookPostStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPostStackView.swift; sourceTree = "<group>"; };
 		1DA7C7FE294CA92F009E1368 /* UIColorColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorColors.swift; sourceTree = "<group>"; };
 		1DA7C800294CB27A009E1368 /* CreateStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStackView.swift; sourceTree = "<group>"; };
@@ -159,6 +172,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DA01FFF295A02B200A28790 /* RxSwift in Frameworks */,
+				1DA01FFD295A02B200A28790 /* RxRelay in Frameworks */,
+				1DA01FFB295A02B200A28790 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				1D332C9F29536E190080F61F /* ArrayViewController.swift */,
+				1D41DBD42955D08E00C3C251 /* ArrayExercices.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -251,6 +268,14 @@
 			path = SwiftUI;
 			sourceTree = "<group>";
 		};
+		1D41DBD82955E99900C3C251 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				1D41DBD92955E9AF00C3C251 /* CommentViewController.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
 		1D4CDDF32954CEF600F893BF /* UIAlertController */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +298,15 @@
 				1D66F42F294D1E4D00797CDF /* Network.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		1DA02003295A07BB00A28790 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				1DA02004295A07D600A28790 /* RxViewController.swift */,
+				1DA02006295A101400A28790 /* RxView.swift */,
+			);
+			path = RxSwift;
 			sourceTree = "<group>";
 		};
 		1DA7C7F6294C9CA7009E1368 /* FakeBookPostView */ = {
@@ -411,6 +445,7 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9E4294A135200FD4189 /* MainMenu_ */,
+				1DA02003295A07BB00A28790 /* RxSwift */,
 				1D332C9E29536DFF0080F61F /* Array */,
 				1DBBEBAD294B576B00739C73 /* Fakebook */,
 				1DB9E9E9294A3A8800FD4189 /* Spinner */,
@@ -474,6 +509,7 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9B4294A02B700FD4189 /* MainMenuViewController.swift */,
+				1DA02000295A02F600A28790 /* MainMenuViewModel.swift */,
 			);
 			path = MainMenu_;
 			sourceTree = "<group>";
@@ -507,15 +543,7 @@
 			path = Spinner;
 			sourceTree = "<group>";
 		};
-		1DBAAA0F29510F5500098126 /* Feed */ = {
-			isa = PBXGroup;
-			children = (
-				1DBAAA1029510F7100098126 /* Feed_ */,
-			);
-			path = Feed;
-			sourceTree = "<group>";
-		};
-		1DBAAA1029510F7100098126 /* Feed_ */ = {
+		1DBAAA1029510F7100098126 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
 				1D66F433294D273D00797CDF /* FakeBookPostsApi.json */,
@@ -528,7 +556,7 @@
 				1D413987294BB955005BFA16 /* FakeBookView */,
 				1D413988294BB95B005BFA16 /* FakeBookViewController */,
 			);
-			path = Feed_;
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		1DBAAA1329511C6300098126 /* UIButton */ = {
@@ -542,7 +570,8 @@
 		1DBBEBAD294B576B00739C73 /* Fakebook */ = {
 			isa = PBXGroup;
 			children = (
-				1DBAAA0F29510F5500098126 /* Feed */,
+				1DBAAA1029510F7100098126 /* Feed */,
+				1D41DBD82955E99900C3C251 /* Comment */,
 			);
 			path = Fakebook;
 			sourceTree = "<group>";
@@ -589,6 +618,11 @@
 			dependencies = (
 			);
 			name = SwiftStudy;
+			packageProductDependencies = (
+				1DA01FFA295A02B200A28790 /* RxCocoa */,
+				1DA01FFC295A02B200A28790 /* RxRelay */,
+				1DA01FFE295A02B200A28790 /* RxSwift */,
+			);
 			productName = SwiftStudy;
 			productReference = 1DB9E9AD294A02B700FD4189 /* SwiftStudy.app */;
 			productType = "com.apple.product-type.application";
@@ -621,6 +655,9 @@
 				Base,
 			);
 			mainGroup = 1DB9E9A4294A02B700FD4189;
+			packageReferences = (
+				1DA01FF9295A02B200A28790 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 1DB9E9AE294A02B700FD4189 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -674,11 +711,14 @@
 				1D0A9A8229522BF30024137D /* LoginView.swift in Sources */,
 				1DBAAA1529511CA100098126 /* resizeImageView.swift in Sources */,
 				1DB9E9CE294A059100FD4189 /* UIViewHierarchy.swift in Sources */,
+				1DA02001295A02F600A28790 /* MainMenuViewModel.swift in Sources */,
 				1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */,
+				1D41DBD52955D08E00C3C251 /* ArrayExercices.swift in Sources */,
 				1D66F430294D1E4D00797CDF /* Network.swift in Sources */,
 				1DA7C7F8294C9CCA009E1368 /* FakeBookPostStackView.swift in Sources */,
 				1DB9E9E7294A198800FD4189 /* StringRemove.swift in Sources */,
 				1DB9E9B5294A02B700FD4189 /* MainMenuViewController.swift in Sources */,
+				1DA02005295A07D600A28790 /* RxViewController.swift in Sources */,
 				1D0A9A86295233A00024137D /* LoginViewController.swift in Sources */,
 				1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */,
 				1DA7C806294CB97F009E1368 /* FakeBookPost.swift in Sources */,
@@ -687,6 +727,7 @@
 				1D4B6BA42951E11000E22C00 /* FakeBookPostButtons.swift in Sources */,
 				1DBBEBB4294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift in Sources */,
 				1DB9E9B3294A02B700FD4189 /* SceneDelegate.swift in Sources */,
+				1DA02007295A101400A28790 /* RxView.swift in Sources */,
 				1D4CDDF22954CEDC00F893BF /* CreateAlert.swift in Sources */,
 				1DBBEBB6294B847A00739C73 /* FakeBookView.swift in Sources */,
 				1D4CDDF52954CF0D00F893BF /* UIAlertControllerHierarchy.swift in Sources */,
@@ -721,6 +762,7 @@
 				1DBBEBBA294B920400739C73 /* UIViewUnderline.swift in Sources */,
 				1D64956A2952670C008AB2D9 /* UIViewScreen.swift in Sources */,
 				1D66F432294D232400797CDF /* FakeBookPerfil.swift in Sources */,
+				1D41DBDA2955E9AF00C3C251 /* CommentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -981,6 +1023,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1DA01FF9295A02B200A28790 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1DA01FFA295A02B200A28790 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DA01FF9295A02B200A28790 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		1DA01FFC295A02B200A28790 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DA01FF9295A02B200A28790 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		1DA01FFE295A02B200A28790 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DA01FF9295A02B200A28790 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1DB9E9A5294A02B700FD4189 /* Project object */;
 }

@@ -8,6 +8,11 @@
 import UIKit
 
 final class FakeBookViewController: UIViewController {
+    private lazy var fakeBookView: FakeBookView = {
+        let fakeBookView = FakeBookView(frame: view.frame)
+        fakeBookView.delegate = self
+        return fakeBookView
+    }()
     private lazy var rightBarButtonItems: [UIBarButtonItem] = {
         let search = UIBarButtonItem()
         search.image = .search
@@ -23,8 +28,16 @@ final class FakeBookViewController: UIViewController {
 
 extension FakeBookViewController: Setup {
     func configure() {
-        view = FakeBookView(frame: view.frame)
+        view = fakeBookView
         title = "\(type(of: self))".removeLast(13)
         navigationItem.rightBarButtonItems = rightBarButtonItems
+    }
+}
+
+extension FakeBookViewController: FakeBookViewDelegate {
+    func fakeBookView(willComment post: FakeBookPost?) -> UIAction? {
+        return UIAction {_ in
+            self.navigationController?.navigate(to: CommentViewController(post))
+        }
     }
 }

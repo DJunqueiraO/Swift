@@ -8,23 +8,33 @@
 import UIKit
 
 final class DataSourceViewController: UIViewController {
+    private var videos: [Video] = {
+        var videos = [Video]()
+        for counter in 1...10 {
+            let video = Video(title: "Lero \(counter)", count: counter)
+            videos.append(video)
+        }
+        return videos
+    }()
     private let tableView = DiffableDataSourceTableView()
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
     @objc private func addVideo() {
-        let actionSheet = Create.element.alert(title: "Lero", message: " Lero", preferredStyle: .actionSheet)
-        for counter in 0...10 {
+        present(createActionSheet(), animated: true)
+    }
+    private func createActionSheet() -> UIAlertController {
+        let actionSheet = Create.element.alert(title: "Lero", message: " Lero", cancelButtonTitle: "Cancel")
+        for video in videos {
             actionSheet.addAction(
-                UIAlertAction(title: "Lero \(counter+1)", style: .default) {[weak self]_ in
-                    let video = Video(title: "Lero \(counter+1)", count: counter+1)
+                UIAlertAction(title: video.title, style: .default) {[weak self]_ in
                     self?.tableView.videos.append(video)
+                    self?.videos = self?.videos.filter{$0 != video} ?? []
                 }
             )
         }
-        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        present(actionSheet, animated: true)
+        return actionSheet
     }
 }
 

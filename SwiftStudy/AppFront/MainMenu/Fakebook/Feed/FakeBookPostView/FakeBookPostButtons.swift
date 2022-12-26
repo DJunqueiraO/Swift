@@ -8,7 +8,12 @@
 import UIKit
 
 final class FakeBookPostButtonsStackView: UIStackView {
-    let likeButton = Create.element.button("Like", image: .star)
+    let likeButton: UIButton = {
+        let likeButton = Create.element.button("Like", image: .star)
+        likeButton.changesSelectionAsPrimaryAction = true
+        likeButton.setImage(.starFill, for: .selected)
+        return likeButton
+    }()
     let commentButton = Create.element.button("Comment", image: .message)
     let shareButton = Create.element.button("Share", image: .share)
     override init(frame: CGRect) {
