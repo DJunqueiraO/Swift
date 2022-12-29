@@ -16,10 +16,8 @@ protocol AnyRouter {
 
 class UserRouter: AnyRouter {
     var entry: EntryPoint?
-    
     static func start() -> AnyRouter {
         let router = UserRouter()
-        
         let view = UserViewController()
         let presenter = UserPresenter()
         let interactor = UserInteractor()

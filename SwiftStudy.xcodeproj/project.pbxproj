@@ -31,7 +31,7 @@
 		1D64956A2952670C008AB2D9 /* UIViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6495692952670C008AB2D9 /* UIViewScreen.swift */; };
 		1D64956C29526C91008AB2D9 /* FakeBookPostPerfilStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D64956B29526C91008AB2D9 /* FakeBookPostPerfilStackView.swift */; };
 		1D64956E29526EBD008AB2D9 /* FakeBookPerfilButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D64956D29526EBD008AB2D9 /* FakeBookPerfilButton.swift */; };
-		1D66F430294D1E4D00797CDF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F42F294D1E4D00797CDF /* Network.swift */; };
+		1D66F430294D1E4D00797CDF /* NetworkHTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F42F294D1E4D00797CDF /* NetworkHTTPMethods.swift */; };
 		1D66F432294D232400797CDF /* FakeBookPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F431294D232400797CDF /* FakeBookPerfil.swift */; };
 		1D66F434294D28AD00797CDF /* FakeBookPostsApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F433294D273D00797CDF /* FakeBookPostsApi.json */; };
 		1D66F436294D290500797CDF /* FakeBookStoriesApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F435294D290500797CDF /* FakeBookStoriesApi.json */; };
@@ -81,6 +81,9 @@
 		1DBBEBC3294BA26000739C73 /* FakeBookStoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBC2294BA26000739C73 /* FakeBookStoriesCollectionView.swift */; };
 		1DD185D8295DBC17002192F1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185D7295DBC17002192F1 /* GradientView.swift */; };
 		1DD185DA295DC840002192F1 /* CrazyGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185D9295DC840002192F1 /* CrazyGradientViewController.swift */; };
+		1DD185DC295DD285002192F1 /* NetworkDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185DB295DD285002192F1 /* NetworkDecode.swift */; };
+		1DD185DE295DD291002192F1 /* NetworkRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185DD295DD291002192F1 /* NetworkRead.swift */; };
+		1DD185E0295DD34F002192F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185DF295DD34F002192F1 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,7 +122,7 @@
 		1D6495692952670C008AB2D9 /* UIViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewScreen.swift; sourceTree = "<group>"; };
 		1D64956B29526C91008AB2D9 /* FakeBookPostPerfilStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPostPerfilStackView.swift; sourceTree = "<group>"; };
 		1D64956D29526EBD008AB2D9 /* FakeBookPerfilButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPerfilButton.swift; sourceTree = "<group>"; };
-		1D66F42F294D1E4D00797CDF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1D66F42F294D1E4D00797CDF /* NetworkHTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHTTPMethods.swift; sourceTree = "<group>"; };
 		1D66F431294D232400797CDF /* FakeBookPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPerfil.swift; sourceTree = "<group>"; };
 		1D66F433294D273D00797CDF /* FakeBookPostsApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FakeBookPostsApi.json; sourceTree = "<group>"; };
 		1D66F435294D290500797CDF /* FakeBookStoriesApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FakeBookStoriesApi.json; sourceTree = "<group>"; };
@@ -168,6 +171,9 @@
 		1DBBEBC2294BA26000739C73 /* FakeBookStoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionView.swift; sourceTree = "<group>"; };
 		1DD185D7295DBC17002192F1 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		1DD185D9295DC840002192F1 /* CrazyGradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyGradientViewController.swift; sourceTree = "<group>"; };
+		1DD185DB295DD285002192F1 /* NetworkDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDecode.swift; sourceTree = "<group>"; };
+		1DD185DD295DD291002192F1 /* NetworkRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRead.swift; sourceTree = "<group>"; };
+		1DD185DF295DD34F002192F1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,7 +311,10 @@
 		1D66F42E294D1E3C00797CDF /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				1D66F42F294D1E4D00797CDF /* Network.swift */,
+				1D66F42F294D1E4D00797CDF /* NetworkHTTPMethods.swift */,
+				1DD185DB295DD285002192F1 /* NetworkDecode.swift */,
+				1DD185DD295DD291002192F1 /* NetworkRead.swift */,
+				1DD185DF295DD34F002192F1 /* Network.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -744,8 +753,9 @@
 				1DB9E9CE294A059100FD4189 /* UIViewHierarchy.swift in Sources */,
 				1DA02001295A02F600A28790 /* MainMenuViewModel.swift in Sources */,
 				1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */,
+				1DD185E0295DD34F002192F1 /* Network.swift in Sources */,
 				1D41DBD52955D08E00C3C251 /* ArrayExercices.swift in Sources */,
-				1D66F430294D1E4D00797CDF /* Network.swift in Sources */,
+				1D66F430294D1E4D00797CDF /* NetworkHTTPMethods.swift in Sources */,
 				1DA7C7F8294C9CCA009E1368 /* FakeBookPostStackView.swift in Sources */,
 				1DB9E9E7294A198800FD4189 /* StringRemove.swift in Sources */,
 				1DA0200D295A208D00A28790 /* RxViewModel.swift in Sources */,
@@ -776,8 +786,10 @@
 				1DD185DA295DC840002192F1 /* CrazyGradientViewController.swift in Sources */,
 				1D0A9A842952305B0024137D /* LoginViewModel.swift in Sources */,
 				1DB9E9C8294A03EC00FD4189 /* Setup.swift in Sources */,
+				1DD185DE295DD291002192F1 /* NetworkRead.swift in Sources */,
 				1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */,
 				1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */,
+				1DD185DC295DD285002192F1 /* NetworkDecode.swift in Sources */,
 				1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */,
 				1D332CA029536E190080F61F /* ArrayViewController.swift in Sources */,
 				1D2FDC1B2950DBB9000CF9A7 /* View.swift in Sources */,

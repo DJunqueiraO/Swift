@@ -21,6 +21,6 @@ extension CrazyGradientViewController: Setup {
     }
     func constrain() {
         gradientView.enableAutoLayout
-            .constraint(attributes: [.top, .trailing, .leading, .bottom])
+            .constraint(attributesConstants: [.top:0, .trailing:0, .leading:0, .bottom:-100])
     }
 }
