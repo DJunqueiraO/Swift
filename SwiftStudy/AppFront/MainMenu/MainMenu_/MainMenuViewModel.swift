@@ -16,7 +16,7 @@ struct MainMenuViewModel {
                                    LoginViewController(),
                                    CrazyGradientViewController(),
                                    GradientView.asHostingController,
-                                   UserRouter.start().entry as Any,
+//                                   UserRouter.start().entry as Any,
                                    FakeBookViewController()]
     var numberOfViewControllers: Int {viewControllers.count}
     func viewController<T: UIViewController>(_ index: Int) -> T? {

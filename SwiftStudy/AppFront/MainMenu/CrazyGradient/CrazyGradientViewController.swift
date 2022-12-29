@@ -18,9 +18,11 @@ final class CrazyGradientViewController: UIViewController {
 extension CrazyGradientViewController: Setup {
     func configure() {
         view.addSubview(gradientView)
+        view.backgroundColor = .reverseDark
     }
     func constrain() {
         gradientView.enableAutoLayout
-            .constraint(attributesConstants: [.top:0, .trailing:0, .leading:0, .bottom:-100])
+            .constraint(attributes: [.top, .trailing, .leading])
+            .constraint(attribute: .height, multiplier: 0.5)
     }
 }
