@@ -17,5 +17,11 @@ final class CallViewController: UIViewController {
 extension CallViewController: Setup {
     func configure() {
         view.backgroundColor = .jokenpoPink
+        Task {
+            let callManager = CallManager()
+            let id = UUID()
+            await callManager.reportIncommingCall(id: id, handleValue: "Josicleison")
+            await callManager.startCall(id: id, handleValue: "Josicleison")
+        }
     }
 }
