@@ -13,6 +13,7 @@ struct MainMenuViewModel {
                                    ArrayViewController(),
                                    RxViewController(),
                                    SpinnerViewController(),
+                                   CallViewController(),
                                    LoginViewController(),
                                    CrazyGradientViewController(),
                                    GradientView.asHostingController,
