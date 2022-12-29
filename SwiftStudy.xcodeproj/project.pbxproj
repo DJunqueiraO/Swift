@@ -84,6 +84,7 @@
 		1DD185DC295DD285002192F1 /* NetworkDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185DB295DD285002192F1 /* NetworkDecode.swift */; };
 		1DD185DE295DD291002192F1 /* NetworkRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185DD295DD291002192F1 /* NetworkRead.swift */; };
 		1DD185E0295DD34F002192F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185DF295DD34F002192F1 /* Network.swift */; };
+		1DD185E3295DDF8E002192F1 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185E2295DDF8E002192F1 /* CallViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +175,7 @@
 		1DD185DB295DD285002192F1 /* NetworkDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDecode.swift; sourceTree = "<group>"; };
 		1DD185DD295DD291002192F1 /* NetworkRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRead.swift; sourceTree = "<group>"; };
 		1DD185DF295DD34F002192F1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1DD185E2295DDF8E002192F1 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -483,6 +485,7 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9E4294A135200FD4189 /* MainMenu_ */,
+				1DD185E1295DDF73002192F1 /* Call */,
 				1DD185D6295DBC02002192F1 /* CrazyGradient */,
 				1DA02003295A07BB00A28790 /* RxSwift */,
 				1D332C9E29536DFF0080F61F /* Array */,
@@ -622,6 +625,14 @@
 				1DD185D9295DC840002192F1 /* CrazyGradientViewController.swift */,
 			);
 			path = CrazyGradient;
+			sourceTree = "<group>";
+		};
+		1DD185E1295DDF73002192F1 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				1DD185E2295DDF8E002192F1 /* CallViewController.swift */,
+			);
+			path = Call;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -764,6 +775,7 @@
 				1DA02005295A07D600A28790 /* RxViewController.swift in Sources */,
 				1D0A9A86295233A00024137D /* LoginViewController.swift in Sources */,
 				1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */,
+				1DD185E3295DDF8E002192F1 /* CallViewController.swift in Sources */,
 				1DA7C806294CB97F009E1368 /* FakeBookPost.swift in Sources */,
 				1DB9E9B1294A02B700FD4189 /* AppDelegate.swift in Sources */,
 				1D66F438294D29A300797CDF /* FakeBookViewModel.swift in Sources */,
