@@ -79,6 +79,8 @@
 		1DBBEBBE294B9D1C00739C73 /* FakeBookStatusStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBBD294B9D1C00739C73 /* FakeBookStatusStackView.swift */; };
 		1DBBEBC1294B9E1000739C73 /* UIStackViewHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */; };
 		1DBBEBC3294BA26000739C73 /* FakeBookStoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBC2294BA26000739C73 /* FakeBookStoriesCollectionView.swift */; };
+		1DD185D8295DBC17002192F1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185D7295DBC17002192F1 /* GradientView.swift */; };
+		1DD185DA295DC840002192F1 /* CrazyGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185D9295DC840002192F1 /* CrazyGradientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +166,8 @@
 		1DBBEBBD294B9D1C00739C73 /* FakeBookStatusStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStatusStackView.swift; sourceTree = "<group>"; };
 		1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewHierarchy.swift; sourceTree = "<group>"; };
 		1DBBEBC2294BA26000739C73 /* FakeBookStoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionView.swift; sourceTree = "<group>"; };
+		1DD185D7295DBC17002192F1 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		1DD185D9295DC840002192F1 /* CrazyGradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyGradientViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,6 +474,7 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9E4294A135200FD4189 /* MainMenu_ */,
+				1DD185D6295DBC02002192F1 /* CrazyGradient */,
 				1DA02003295A07BB00A28790 /* RxSwift */,
 				1D332C9E29536DFF0080F61F /* Array */,
 				1DBBEBAD294B576B00739C73 /* Fakebook */,
@@ -599,6 +604,15 @@
 				1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */,
 			);
 			path = UIStackView;
+			sourceTree = "<group>";
+		};
+		1DD185D6295DBC02002192F1 /* CrazyGradient */ = {
+			isa = PBXGroup;
+			children = (
+				1DD185D7295DBC17002192F1 /* GradientView.swift */,
+				1DD185D9295DC840002192F1 /* CrazyGradientViewController.swift */,
+			);
+			path = CrazyGradient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -759,6 +773,7 @@
 				1DBBEBBE294B9D1C00739C73 /* FakeBookStatusStackView.swift in Sources */,
 				1D64956C29526C91008AB2D9 /* FakeBookPostPerfilStackView.swift in Sources */,
 				1D2FDC1D2950DBC7000CF9A7 /* Interactor.swift in Sources */,
+				1DD185DA295DC840002192F1 /* CrazyGradientViewController.swift in Sources */,
 				1D0A9A842952305B0024137D /* LoginViewModel.swift in Sources */,
 				1DB9E9C8294A03EC00FD4189 /* Setup.swift in Sources */,
 				1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */,
@@ -767,6 +782,7 @@
 				1D332CA029536E190080F61F /* ArrayViewController.swift in Sources */,
 				1D2FDC1B2950DBB9000CF9A7 /* View.swift in Sources */,
 				1DB9E9E2294A111F00FD4189 /* Video.swift in Sources */,
+				1DD185D8295DBC17002192F1 /* GradientView.swift in Sources */,
 				1D2FDC232950DBED000CF9A7 /* Router.swift in Sources */,
 				1DB9E9CC294A058400FD4189 /* UIViewConstraints.swift in Sources */,
 				1D2FDC192950CA8A000CF9A7 /* SpinnerView.swift in Sources */,
