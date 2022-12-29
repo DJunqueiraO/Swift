@@ -14,7 +14,9 @@ struct MainMenuViewModel {
                                    RxViewController(),
                                    SpinnerViewController(),
                                    LoginViewController(),
-                                   //                                   UserRouter.start().entry as Any,
+                                   CrazyGradientViewController(),
+                                   GradientView.asHostingController,
+                                   UserRouter.start().entry as Any,
                                    FakeBookViewController()]
     var numberOfViewControllers: Int {viewControllers.count}
     func viewController<T: UIViewController>(_ index: Int) -> T? {
@@ -24,7 +26,7 @@ struct MainMenuViewModel {
     func setup(_ cell: UITableViewCell, cellForRowAt indexPath: IndexPath) {
         cell.backgroundColor = .yellow
 //        guard let viewController = viewControllers[indexPath.row] as? UIViewController else {return cell}
-        let label = Create.element.label("\(type(of: viewControllers[indexPath.row]))".removeLast(13))
+        let label = Create.element.label("\(type(of: viewControllers[indexPath.row]))")
         label.textColor = .black
         cell.contentView.addSubview(label)
         label.enableAutoLayout

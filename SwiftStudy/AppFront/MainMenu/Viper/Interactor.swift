@@ -17,8 +17,8 @@ class UserInteractor: AnyInteractor {
     func getUsers() async {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else {return}
         do {
-            let (data, response) = try await URLSession.shared.data(from: url)
-            print("RESPONSE:", response)
+            let (data, _) = try await URLSession.shared.data(from: url)
+//            print("RESPONSE:", response)
             let entities = try JSONDecoder().decode([User].self, from: data)
             presenter?.interactorDidFetchUsers(with: .success(entities))
         } catch {
