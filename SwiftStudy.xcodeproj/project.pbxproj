@@ -79,6 +79,16 @@
 		1DBBEBBE294B9D1C00739C73 /* FakeBookStatusStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBBD294B9D1C00739C73 /* FakeBookStatusStackView.swift */; };
 		1DBBEBC1294B9E1000739C73 /* UIStackViewHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */; };
 		1DBBEBC3294BA26000739C73 /* FakeBookStoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBC2294BA26000739C73 /* FakeBookStoriesCollectionView.swift */; };
+		1DBBFDA2296703C400BA9E69 /* FilePrivateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDA1296703C400BA9E69 /* FilePrivateObject.swift */; };
+		1DBBFDA4296703F500BA9E69 /* Digimon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDA3296703F500BA9E69 /* Digimon.swift */; };
+		1DBBFDA729670CAF00BA9E69 /* URLEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDA629670CAF00BA9E69 /* URLEndPoints.swift */; };
+		1DBBFDAA29670D7C00BA9E69 /* DigimonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDA929670D7C00BA9E69 /* DigimonsViewController.swift */; };
+		1DBBFDAC29670E2600BA9E69 /* DigimonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDAB29670E2600BA9E69 /* DigimonsView.swift */; };
+		1DBBFDAE2967113400BA9E69 /* Digimons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDAD2967113400BA9E69 /* Digimons.swift */; };
+		1DBBFDB02967132A00BA9E69 /* DigimonsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDAF2967132A00BA9E69 /* DigimonsTableView.swift */; };
+		1DBBFDB42967145200BA9E69 /* DigimonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDB32967145200BA9E69 /* DigimonTableViewCell.swift */; };
+		1DBBFDBB2967265E00BA9E69 /* DigimonsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDBA2967265E00BA9E69 /* DigimonsTableViewModel.swift */; };
+		1DBBFDBE29672CD200BA9E69 /* DigimonsFilterStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDBD29672CD200BA9E69 /* DigimonsFilterStackView.swift */; };
 		1DD185D8295DBC17002192F1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185D7295DBC17002192F1 /* GradientView.swift */; };
 		1DD185DA295DC840002192F1 /* CrazyGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185D9295DC840002192F1 /* CrazyGradientViewController.swift */; };
 		1DD185DC295DD285002192F1 /* NetworkDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185DB295DD285002192F1 /* NetworkDecode.swift */; };
@@ -171,6 +181,16 @@
 		1DBBEBBD294B9D1C00739C73 /* FakeBookStatusStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStatusStackView.swift; sourceTree = "<group>"; };
 		1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewHierarchy.swift; sourceTree = "<group>"; };
 		1DBBEBC2294BA26000739C73 /* FakeBookStoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionView.swift; sourceTree = "<group>"; };
+		1DBBFDA1296703C400BA9E69 /* FilePrivateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePrivateObject.swift; sourceTree = "<group>"; };
+		1DBBFDA3296703F500BA9E69 /* Digimon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digimon.swift; sourceTree = "<group>"; };
+		1DBBFDA629670CAF00BA9E69 /* URLEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndPoints.swift; sourceTree = "<group>"; };
+		1DBBFDA929670D7C00BA9E69 /* DigimonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonsViewController.swift; sourceTree = "<group>"; };
+		1DBBFDAB29670E2600BA9E69 /* DigimonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonsView.swift; sourceTree = "<group>"; };
+		1DBBFDAD2967113400BA9E69 /* Digimons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digimons.swift; sourceTree = "<group>"; };
+		1DBBFDAF2967132A00BA9E69 /* DigimonsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonsTableView.swift; sourceTree = "<group>"; };
+		1DBBFDB32967145200BA9E69 /* DigimonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonTableViewCell.swift; sourceTree = "<group>"; };
+		1DBBFDBA2967265E00BA9E69 /* DigimonsTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonsTableViewModel.swift; sourceTree = "<group>"; };
+		1DBBFDBD29672CD200BA9E69 /* DigimonsFilterStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonsFilterStackView.swift; sourceTree = "<group>"; };
 		1DD185D7295DBC17002192F1 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		1DD185D9295DC840002192F1 /* CrazyGradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyGradientViewController.swift; sourceTree = "<group>"; };
 		1DD185DB295DD285002192F1 /* NetworkDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDecode.swift; sourceTree = "<group>"; };
@@ -451,6 +471,7 @@
 		1DB9E9C9294A055F00FD4189 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1DBBFDA529670C9E00BA9E69 /* URL */,
 				1D4CDDF32954CEF600F893BF /* UIAlertController */,
 				1DBAAA1329511C6300098126 /* UIButton */,
 				1DA7C807294CBE25009E1368 /* UIImage */,
@@ -487,6 +508,7 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9E4294A135200FD4189 /* MainMenu_ */,
+				1DBBFDA829670D6200BA9E69 /* Digimons */,
 				1DD185E1295DDF73002192F1 /* Call */,
 				1DD185D6295DBC02002192F1 /* CrazyGradient */,
 				1DA02003295A07BB00A28790 /* RxSwift */,
@@ -505,6 +527,8 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9D5294A0A2D00FD4189 /* AccessControllViewController.swift */,
+				1DBBFDA1296703C400BA9E69 /* FilePrivateObject.swift */,
+				1DBBFDA3296703F500BA9E69 /* Digimon.swift */,
 			);
 			path = Access;
 			sourceTree = "<group>";
@@ -618,6 +642,76 @@
 				1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */,
 			);
 			path = UIStackView;
+			sourceTree = "<group>";
+		};
+		1DBBFDA529670C9E00BA9E69 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBFDA629670CAF00BA9E69 /* URLEndPoints.swift */,
+			);
+			path = URL;
+			sourceTree = "<group>";
+		};
+		1DBBFDA829670D6200BA9E69 /* Digimons */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBFDB22967143400BA9E69 /* DigimonsLayout */,
+				1DBBFDB12967141B00BA9E69 /* DigimonsNetwork */,
+			);
+			path = Digimons;
+			sourceTree = "<group>";
+		};
+		1DBBFDB12967141B00BA9E69 /* DigimonsNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBFDAD2967113400BA9E69 /* Digimons.swift */,
+			);
+			path = DigimonsNetwork;
+			sourceTree = "<group>";
+		};
+		1DBBFDB22967143400BA9E69 /* DigimonsLayout */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBFDBC29672CB800BA9E69 /* DigimonsFilterStackView */,
+				1DBBFDB629671A7E00BA9E69 /* DigimonsTableView */,
+				1DBBFDB529671A5D00BA9E69 /* DigimonsView */,
+				1DBBFDB729671A9300BA9E69 /* DigimonsViewController */,
+			);
+			path = DigimonsLayout;
+			sourceTree = "<group>";
+		};
+		1DBBFDB529671A5D00BA9E69 /* DigimonsView */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBFDAB29670E2600BA9E69 /* DigimonsView.swift */,
+			);
+			path = DigimonsView;
+			sourceTree = "<group>";
+		};
+		1DBBFDB629671A7E00BA9E69 /* DigimonsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBFDB32967145200BA9E69 /* DigimonTableViewCell.swift */,
+				1DBBFDBA2967265E00BA9E69 /* DigimonsTableViewModel.swift */,
+				1DBBFDAF2967132A00BA9E69 /* DigimonsTableView.swift */,
+			);
+			path = DigimonsTableView;
+			sourceTree = "<group>";
+		};
+		1DBBFDB729671A9300BA9E69 /* DigimonsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBFDA929670D7C00BA9E69 /* DigimonsViewController.swift */,
+			);
+			path = DigimonsViewController;
+			sourceTree = "<group>";
+		};
+		1DBBFDBC29672CB800BA9E69 /* DigimonsFilterStackView */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBFDBD29672CD200BA9E69 /* DigimonsFilterStackView.swift */,
+			);
+			path = DigimonsFilterStackView;
 			sourceTree = "<group>";
 		};
 		1DD185D6295DBC02002192F1 /* CrazyGradient */ = {
@@ -757,15 +851,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DBBFDA729670CAF00BA9E69 /* URLEndPoints.swift in Sources */,
 				1DB9E9D8294A0AC800FD4189 /* Create.swift in Sources */,
 				1D4CDDF72954D37C00F893BF /* DiffableDataSourceTableView.swift in Sources */,
 				1DB9E9D1294A05A800FD4189 /* UIScrollViewHierarchy.swift in Sources */,
+				1DBBFDBB2967265E00BA9E69 /* DigimonsTableViewModel.swift in Sources */,
 				1D2FDC212950DBE1000CF9A7 /* Entity.swift in Sources */,
+				1DBBFDA2296703C400BA9E69 /* FilePrivateObject.swift in Sources */,
 				1DA7C803294CB28A009E1368 /* CreateImageView.swift in Sources */,
 				1D0A9A8229522BF30024137D /* LoginView.swift in Sources */,
+				1DBBFDBE29672CD200BA9E69 /* DigimonsFilterStackView.swift in Sources */,
 				1DBAAA1529511CA100098126 /* resizeImageView.swift in Sources */,
 				1DB9E9CE294A059100FD4189 /* UIViewHierarchy.swift in Sources */,
 				1DA02001295A02F600A28790 /* MainMenuViewModel.swift in Sources */,
+				1DBBFDAE2967113400BA9E69 /* Digimons.swift in Sources */,
 				1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */,
 				1DD185E0295DD34F002192F1 /* Network.swift in Sources */,
 				1D41DBD52955D08E00C3C251 /* ArrayExercices.swift in Sources */,
@@ -777,6 +876,7 @@
 				1DA0200F295A22DF00A28790 /* RxTableViewCell.swift in Sources */,
 				1DA02005295A07D600A28790 /* RxViewController.swift in Sources */,
 				1D0A9A86295233A00024137D /* LoginViewController.swift in Sources */,
+				1DBBFDAA29670D7C00BA9E69 /* DigimonsViewController.swift in Sources */,
 				1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */,
 				1DD185E3295DDF8E002192F1 /* CallViewController.swift in Sources */,
 				1DA7C806294CB97F009E1368 /* FakeBookPost.swift in Sources */,
@@ -800,10 +900,14 @@
 				1D2FDC1D2950DBC7000CF9A7 /* Interactor.swift in Sources */,
 				1DD185DA295DC840002192F1 /* CrazyGradientViewController.swift in Sources */,
 				1D0A9A842952305B0024137D /* LoginViewModel.swift in Sources */,
+				1DBBFDB42967145200BA9E69 /* DigimonTableViewCell.swift in Sources */,
 				1DB9E9C8294A03EC00FD4189 /* Setup.swift in Sources */,
+				1DBBFDB02967132A00BA9E69 /* DigimonsTableView.swift in Sources */,
 				1DD185DE295DD291002192F1 /* NetworkRead.swift in Sources */,
 				1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */,
+				1DBBFDA4296703F500BA9E69 /* Digimon.swift in Sources */,
 				1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */,
+				1DBBFDAC29670E2600BA9E69 /* DigimonsView.swift in Sources */,
 				1DD185DC295DD285002192F1 /* NetworkDecode.swift in Sources */,
 				1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */,
 				1D332CA029536E190080F61F /* ArrayViewController.swift in Sources */,
