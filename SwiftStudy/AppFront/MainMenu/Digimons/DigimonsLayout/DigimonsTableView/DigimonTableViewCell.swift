@@ -30,7 +30,7 @@ final class DigimonTableViewCell: UITableViewCell {
         digimonNameLabel.text = digimon.name
         digimonLevelLabel.text = digimon.level
         Task {
-            digimonImageView.image = await digimon.getImage()
+            digimonImageView.image = await digimon.img()
         }
     }
     required init?(coder: NSCoder) {

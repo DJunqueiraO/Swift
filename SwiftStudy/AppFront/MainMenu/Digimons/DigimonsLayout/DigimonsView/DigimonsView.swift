@@ -9,7 +9,7 @@ import UIKit
 
 final class DigimonsView: UIView {
     private let filterStackView = DigimonsFilterStackView()
-    private let tableView = DigimonsTableView()
+    private let digimonsTableView = DigimonsTableView()
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -18,22 +18,32 @@ final class DigimonsView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     @objc func filterNameTextFieldTarget(_ sender: UITextField) {
-        
+        digimonsTableView.digimonsTableViewModel.reloadData()
+        if let text = sender.text, text != "" {
+            digimonsTableView.digimonsTableViewModel.filter(name: text)
+        }
+    }
+    @objc func filterLevelTextFieldTarget(_ sender: UITextField) {
+        digimonsTableView.digimonsTableViewModel.reloadData()
+        if let text = sender.text, text != "" {
+            digimonsTableView.digimonsTableViewModel.filter(level: text)
+        }
     }
 }
 
 extension DigimonsView: Setup {
     func configure() {
-        addSubviews([filterStackView, tableView])
-        filterStackView.filterNameTextField.addTarget(self,
-                                                      action: #selector(filterNameTextFieldTarget),
+        addSubviews([filterStackView, digimonsTableView])
+        filterStackView.filterNameTextField.addTarget(self, action: #selector(filterNameTextFieldTarget),
                                                       for: .editingChanged)
+        filterStackView.filterLevelTextField.addTarget(self, action: #selector(filterLevelTextFieldTarget),
+                                                       for: .editingChanged)
     }
     func constrain() {
         filterStackView.enableAutoLayout
             .constraint(attributes: [.leading, .trailing, .top], to: safeAreaLayoutGuide)
             .constraint(attribute: .height, to: safeAreaLayoutGuide, multiplier: 0.1)
-        tableView.enableAutoLayout
+        digimonsTableView.enableAutoLayout
             .constraint(attributes: [.leading, .trailing, .bottom], to: safeAreaLayoutGuide)
             .constraint(attribute: .height, to: safeAreaLayoutGuide, multiplier: 0.9)
     }

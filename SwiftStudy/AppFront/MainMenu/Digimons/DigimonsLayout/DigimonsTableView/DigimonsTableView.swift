@@ -8,7 +8,7 @@
 import UIKit
 
 final class DigimonsTableView: UITableView {
-    private var digimonsTableViewModel = DigimonsTableViewModel()
+    var digimonsTableViewModel = DigimonsTableViewModel()
     let cellIdentifier = "Cell"
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)

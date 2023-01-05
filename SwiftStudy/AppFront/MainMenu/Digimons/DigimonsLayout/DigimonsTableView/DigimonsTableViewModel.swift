@@ -17,6 +17,7 @@ final class DigimonsTableViewModel {
             getData()
         }
     }
+    private var storedDigimons: Digimons = []
     private var digimons: Digimons = [] {
         didSet {
             delegate?.digimonsTableViewModelDidGetData()
@@ -31,6 +32,16 @@ final class DigimonsTableViewModel {
             guard let data = await Network.get(from: .digimonApi)?.data else {return}
             guard let digimons = Network.decode(Digimons.self, from: data) else {return}
             self.digimons = digimons
+            self.storedDigimons = digimons
         }
+    }
+    func reloadData() {
+        digimons = storedDigimons
+    }
+    func filter(name: String) {
+        digimons = digimons.filter{$0.name?.contains(name) ?? false}
+    }
+    func filter(level: String) {
+        digimons = digimons.filter{$0.level?.contains(level) ?? false}
     }
 }

@@ -9,7 +9,7 @@ import UIKit
 
 struct Digimon: Codable {
     let name, img, level: String?
-    func getImage() async -> UIImage? {
+    func img() async -> UIImage? {
         guard let link = img else {return nil}
         guard let data = await Network.get(from: URL(string: link))?.data else {return nil}
         return UIImage(data: data)
