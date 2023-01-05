@@ -38,13 +38,13 @@ final class DigimonsTableViewModel {
     func filter(name: String?) {
         digimons = storedDigimons
         if let text = name, text != "" {
-            digimons = digimons.filter{$0.name?.contains(text) ?? false}
+            digimons = digimons.filter{$0.name?.contains(text.capitalized) ?? false}
         }
     }
     func filter(level: String?) {
         digimons = storedDigimons
         if let text = level, text != "" {
-            digimons = digimons.filter{$0.level?.contains(text) ?? false}
+            digimons = digimons.filter{$0.level?.contains(text.capitalized) ?? false}
         }
     }
 }
