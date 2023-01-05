@@ -15,7 +15,6 @@ final class DigimonTableViewCell: UITableViewCell {
     }()
     private let digimonNameLabel: UILabel = {
         let digimonNameLabel = Create.element.label()
-        digimonNameLabel.backgroundColor = .blue
         return digimonNameLabel
     }()
     private let digimonLevelLabel: UILabel = {

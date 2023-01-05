@@ -17,17 +17,11 @@ final class DigimonsView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    @objc func filterNameTextFieldTarget(_ sender: UITextField) {
-        digimonsTableView.digimonsTableViewModel.reloadData()
-        if let text = sender.text, text != "" {
-            digimonsTableView.digimonsTableViewModel.filter(name: text)
-        }
+    @objc private func filterNameTextFieldTarget(_ sender: UITextField) {
+        digimonsTableView.filter(name: sender.text)
     }
-    @objc func filterLevelTextFieldTarget(_ sender: UITextField) {
-        digimonsTableView.digimonsTableViewModel.reloadData()
-        if let text = sender.text, text != "" {
-            digimonsTableView.digimonsTableViewModel.filter(level: text)
-        }
+    @objc private func filterLevelTextFieldTarget(_ sender: UITextField) {
+        digimonsTableView.filter(level: sender.text)
     }
 }
 

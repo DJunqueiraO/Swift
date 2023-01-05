@@ -8,7 +8,7 @@
 import UIKit
 
 final class DigimonsTableView: UITableView {
-    var digimonsTableViewModel = DigimonsTableViewModel()
+    private var digimonsTableViewModel = DigimonsTableViewModel()
     let cellIdentifier = "Cell"
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -16,6 +16,12 @@ final class DigimonsTableView: UITableView {
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    func filter(name: String?) {
+        digimonsTableViewModel.filter(name: name)
+    }
+    func filter(level: String?) {
+        digimonsTableViewModel.filter(level: level)
     }
 }
 
