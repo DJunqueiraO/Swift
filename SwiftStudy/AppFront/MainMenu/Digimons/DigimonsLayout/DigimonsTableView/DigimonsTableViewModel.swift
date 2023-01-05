@@ -35,13 +35,16 @@ final class DigimonsTableViewModel {
             self.storedDigimons = digimons
         }
     }
-    func reloadData() {
+    func filter(name: String?) {
         digimons = storedDigimons
+        if let text = name, text != "" {
+            digimons = digimons.filter{$0.name?.contains(text) ?? false}
+        }
     }
-    func filter(name: String) {
-        digimons = digimons.filter{$0.name?.contains(name) ?? false}
-    }
-    func filter(level: String) {
-        digimons = digimons.filter{$0.level?.contains(level) ?? false}
+    func filter(level: String?) {
+        digimons = storedDigimons
+        if let text = level, text != "" {
+            digimons = digimons.filter{$0.level?.contains(text) ?? false}
+        }
     }
 }
