@@ -8,12 +8,12 @@
 import UIKit
 
 final class AccessViewController: UIViewController {
-    fileprivate func printLero() {
-        print("Lero Lero")
-    }
+//    fileprivate func printLero() {
+//        print("Lero Lero")
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        FilePrivateObject().callLero()
+//        FilePrivateObject().callLero()
         setup()
     }
 }
@@ -21,12 +21,5 @@ final class AccessViewController: UIViewController {
 extension AccessViewController: Setup {
     func configure() {
         view.backgroundColor = .green
-    }
-}
-
-class FilePrivateObject {
-    let accessControlViewController = AccessViewController()
-    func callLero() {
-        accessControlViewController.printLero()
     }
 }

@@ -25,6 +25,6 @@ struct SwiftUI: UIViewControllerRepresentable {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUI.show(FakeBookViewController())
+        SwiftUI.show(DigimonsViewController())
     }
 }
