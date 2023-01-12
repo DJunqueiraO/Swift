@@ -16,6 +16,7 @@ struct MainMenuViewModel {
                                    SpinnerViewController(),
                                    CallViewController(),
                                    LoginViewController(),
+                                   FullCourseViewController(),
                                    CrazyGradientViewController(),
                                    GradientView.asHostingController,
 //                                   UserRouter.start().entry as Any,

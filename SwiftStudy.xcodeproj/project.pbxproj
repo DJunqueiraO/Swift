@@ -98,6 +98,11 @@
 		1DD185E0295DD34F002192F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185DF295DD34F002192F1 /* Network.swift */; };
 		1DD185E3295DDF8E002192F1 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185E2295DDF8E002192F1 /* CallViewController.swift */; };
 		1DD185E5295DE057002192F1 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD185E4295DE057002192F1 /* CallManager.swift */; };
+		1DF4B4582970763000B3F139 /* FullCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4B4572970763000B3F139 /* FullCourseViewController.swift */; };
+		1DF4B45A2970776F00B3F139 /* FullCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4B4592970776F00B3F139 /* FullCourseView.swift */; };
+		1DF4B45C2970780700B3F139 /* FullCourseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4B45B2970780700B3F139 /* FullCourseTableView.swift */; };
+		1DF4B45E29707AB200B3F139 /* FullCourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4B45D29707AB200B3F139 /* FullCourseTableViewCell.swift */; };
+		1DF4B46229707CEE00B3F139 /* Exercice_1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4B46129707CEE00B3F139 /* Exercice_1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +207,11 @@
 		1DD185DF295DD34F002192F1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1DD185E2295DDF8E002192F1 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 		1DD185E4295DE057002192F1 /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		1DF4B4572970763000B3F139 /* FullCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullCourseViewController.swift; sourceTree = "<group>"; };
+		1DF4B4592970776F00B3F139 /* FullCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullCourseView.swift; sourceTree = "<group>"; };
+		1DF4B45B2970780700B3F139 /* FullCourseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullCourseTableView.swift; sourceTree = "<group>"; };
+		1DF4B45D29707AB200B3F139 /* FullCourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullCourseTableViewCell.swift; sourceTree = "<group>"; };
+		1DF4B46129707CEE00B3F139 /* Exercice_1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercice_1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -515,6 +525,7 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9E4294A135200FD4189 /* MainMenu_ */,
+				1DF4B455297075FF00B3F139 /* FullCourse */,
 				1DBBFDA829670D6200BA9E69 /* Digimons */,
 				1DD185E1295DDF73002192F1 /* Call */,
 				1DD185D6295DBC02002192F1 /* CrazyGradient */,
@@ -738,6 +749,34 @@
 			path = Call;
 			sourceTree = "<group>";
 		};
+		1DF4B455297075FF00B3F139 /* FullCourse */ = {
+			isa = PBXGroup;
+			children = (
+				1DF4B4562970761A00B3F139 /* FullCourse_ */,
+				1DF4B46029707CD300B3F139 /* Exercice_1 */,
+			);
+			path = FullCourse;
+			sourceTree = "<group>";
+		};
+		1DF4B4562970761A00B3F139 /* FullCourse_ */ = {
+			isa = PBXGroup;
+			children = (
+				1DF4B4572970763000B3F139 /* FullCourseViewController.swift */,
+				1DF4B4592970776F00B3F139 /* FullCourseView.swift */,
+				1DF4B45B2970780700B3F139 /* FullCourseTableView.swift */,
+				1DF4B45D29707AB200B3F139 /* FullCourseTableViewCell.swift */,
+			);
+			path = FullCourse_;
+			sourceTree = "<group>";
+		};
+		1DF4B46029707CD300B3F139 /* Exercice_1 */ = {
+			isa = PBXGroup;
+			children = (
+				1DF4B46129707CEE00B3F139 /* Exercice_1ViewController.swift */,
+			);
+			path = Exercice_1;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -892,6 +931,7 @@
 				1DB9E9B3294A02B700FD4189 /* SceneDelegate.swift in Sources */,
 				1DA02007295A101400A28790 /* RxView.swift in Sources */,
 				1DA1CE9B296888800097B3C9 /* ApiCaller.swift in Sources */,
+				1DF4B45E29707AB200B3F139 /* FullCourseTableViewCell.swift in Sources */,
 				1D4CDDF22954CEDC00F893BF /* CreateAlert.swift in Sources */,
 				1DBBEBB6294B847A00739C73 /* FakeBookView.swift in Sources */,
 				1D4CDDF52954CF0D00F893BF /* UIAlertControllerHierarchy.swift in Sources */,
@@ -903,6 +943,7 @@
 				1DBBEBC1294B9E1000739C73 /* UIStackViewHierarchy.swift in Sources */,
 				1DBBEBBE294B9D1C00739C73 /* FakeBookStatusStackView.swift in Sources */,
 				1D64956C29526C91008AB2D9 /* FakeBookPostPerfilStackView.swift in Sources */,
+				1DF4B45C2970780700B3F139 /* FullCourseTableView.swift in Sources */,
 				1D2FDC1D2950DBC7000CF9A7 /* Interactor.swift in Sources */,
 				1DD185DA295DC840002192F1 /* CrazyGradientViewController.swift in Sources */,
 				1D0A9A842952305B0024137D /* LoginViewModel.swift in Sources */,
@@ -923,13 +964,16 @@
 				1DD185D8295DBC17002192F1 /* GradientView.swift in Sources */,
 				1D2FDC232950DBED000CF9A7 /* Router.swift in Sources */,
 				1DB9E9CC294A058400FD4189 /* UIViewConstraints.swift in Sources */,
+				1DF4B4582970763000B3F139 /* FullCourseViewController.swift in Sources */,
 				1D2FDC192950CA8A000CF9A7 /* SpinnerView.swift in Sources */,
 				1DA30510296E0E9D0098A626 /* ExampleLoginView.swift in Sources */,
 				1DBBEBAF294B579900739C73 /* FakeBookViewController.swift in Sources */,
+				1DF4B45A2970776F00B3F139 /* FullCourseView.swift in Sources */,
 				1DB9E9EF294A40C000FD4189 /* CreateLabel.swift in Sources */,
 				1DBBEBBC294B945400739C73 /* FakeBookNavigationCollectionViewCell.swift in Sources */,
 				1DD185E5295DE057002192F1 /* CallManager.swift in Sources */,
 				1D64956E29526EBD008AB2D9 /* FakeBookPerfilButton.swift in Sources */,
+				1DF4B46229707CEE00B3F139 /* Exercice_1ViewController.swift in Sources */,
 				1DB9E9F1294A40CC00FD4189 /* CreateButton.swift in Sources */,
 				1D2FDC1F2950DBD5000CF9A7 /* Presenter.swift in Sources */,
 				1DBBEBC3294BA26000739C73 /* FakeBookStoriesCollectionView.swift in Sources */,
