@@ -45,6 +45,9 @@
 		1DA02009295A1DB600A28790 /* RxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA02008295A1DB600A28790 /* RxModel.swift */; };
 		1DA0200D295A208D00A28790 /* RxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA0200C295A208D00A28790 /* RxViewModel.swift */; };
 		1DA0200F295A22DF00A28790 /* RxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA0200E295A22DF00A28790 /* RxTableViewCell.swift */; };
+		1DA1CE9929687C4A0097B3C9 /* GenericsExercices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1CE9829687C4A0097B3C9 /* GenericsExercices.swift */; };
+		1DA1CE9B296888800097B3C9 /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1CE9A296888800097B3C9 /* ApiCaller.swift */; };
+		1DA30510296E0E9D0098A626 /* ExampleLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3050F296E0E9D0098A626 /* ExampleLoginView.swift */; };
 		1DA7C7F8294C9CCA009E1368 /* FakeBookPostStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7F7294C9CCA009E1368 /* FakeBookPostStackView.swift */; };
 		1DA7C7FF294CA92F009E1368 /* UIColorColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7FE294CA92F009E1368 /* UIColorColors.swift */; };
 		1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C800294CB27A009E1368 /* CreateStackView.swift */; };
@@ -79,7 +82,6 @@
 		1DBBEBBE294B9D1C00739C73 /* FakeBookStatusStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBBD294B9D1C00739C73 /* FakeBookStatusStackView.swift */; };
 		1DBBEBC1294B9E1000739C73 /* UIStackViewHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */; };
 		1DBBEBC3294BA26000739C73 /* FakeBookStoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBC2294BA26000739C73 /* FakeBookStoriesCollectionView.swift */; };
-		1DBBFDA2296703C400BA9E69 /* FilePrivateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDA1296703C400BA9E69 /* FilePrivateObject.swift */; };
 		1DBBFDA4296703F500BA9E69 /* Digimon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDA3296703F500BA9E69 /* Digimon.swift */; };
 		1DBBFDA729670CAF00BA9E69 /* URLEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDA629670CAF00BA9E69 /* URLEndPoints.swift */; };
 		1DBBFDAA29670D7C00BA9E69 /* DigimonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDA929670D7C00BA9E69 /* DigimonsViewController.swift */; };
@@ -145,6 +147,9 @@
 		1DA02008295A1DB600A28790 /* RxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxModel.swift; sourceTree = "<group>"; };
 		1DA0200C295A208D00A28790 /* RxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewModel.swift; sourceTree = "<group>"; };
 		1DA0200E295A22DF00A28790 /* RxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewCell.swift; sourceTree = "<group>"; };
+		1DA1CE9829687C4A0097B3C9 /* GenericsExercices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsExercices.swift; sourceTree = "<group>"; };
+		1DA1CE9A296888800097B3C9 /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
+		1DA3050F296E0E9D0098A626 /* ExampleLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleLoginView.swift; sourceTree = "<group>"; };
 		1DA7C7F7294C9CCA009E1368 /* FakeBookPostStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPostStackView.swift; sourceTree = "<group>"; };
 		1DA7C7FE294CA92F009E1368 /* UIColorColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorColors.swift; sourceTree = "<group>"; };
 		1DA7C800294CB27A009E1368 /* CreateStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStackView.swift; sourceTree = "<group>"; };
@@ -181,7 +186,6 @@
 		1DBBEBBD294B9D1C00739C73 /* FakeBookStatusStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStatusStackView.swift; sourceTree = "<group>"; };
 		1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewHierarchy.swift; sourceTree = "<group>"; };
 		1DBBEBC2294BA26000739C73 /* FakeBookStoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionView.swift; sourceTree = "<group>"; };
-		1DBBFDA1296703C400BA9E69 /* FilePrivateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePrivateObject.swift; sourceTree = "<group>"; };
 		1DBBFDA3296703F500BA9E69 /* Digimon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digimon.swift; sourceTree = "<group>"; };
 		1DBBFDA629670CAF00BA9E69 /* URLEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndPoints.swift; sourceTree = "<group>"; };
 		1DBBFDA929670D7C00BA9E69 /* DigimonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonsViewController.swift; sourceTree = "<group>"; };
@@ -231,13 +235,16 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		1D332C9E29536DFF0080F61F /* Array */ = {
+		1D332C9E29536DFF0080F61F /* ArrayNDGenerics */ = {
 			isa = PBXGroup;
 			children = (
-				1D332C9F29536E190080F61F /* ArrayViewController.swift */,
 				1D41DBD42955D08E00C3C251 /* ArrayExercices.swift */,
+				1D332C9F29536E190080F61F /* ArrayViewController.swift */,
+				1DA1CE9829687C4A0097B3C9 /* GenericsExercices.swift */,
+				1DA1CE9A296888800097B3C9 /* ApiCaller.swift */,
+				1DA3050F296E0E9D0098A626 /* ExampleLoginView.swift */,
 			);
-			path = Array;
+			path = ArrayNDGenerics;
 			sourceTree = "<group>";
 		};
 		1D332CA629537FCC0080F61F /* SwiftStudyUITests */ = {
@@ -512,7 +519,7 @@
 				1DD185E1295DDF73002192F1 /* Call */,
 				1DD185D6295DBC02002192F1 /* CrazyGradient */,
 				1DA02003295A07BB00A28790 /* RxSwift */,
-				1D332C9E29536DFF0080F61F /* Array */,
+				1D332C9E29536DFF0080F61F /* ArrayNDGenerics */,
 				1DBBEBAD294B576B00739C73 /* Fakebook */,
 				1DB9E9E9294A3A8800FD4189 /* Spinner */,
 				1DB9E9E8294A397100FD4189 /* Viper */,
@@ -527,7 +534,6 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9D5294A0A2D00FD4189 /* AccessControllViewController.swift */,
-				1DBBFDA1296703C400BA9E69 /* FilePrivateObject.swift */,
 				1DBBFDA3296703F500BA9E69 /* Digimon.swift */,
 			);
 			path = Access;
@@ -568,8 +574,8 @@
 		1DB9E9E4294A135200FD4189 /* MainMenu_ */ = {
 			isa = PBXGroup;
 			children = (
-				1DB9E9B4294A02B700FD4189 /* MainMenuViewController.swift */,
 				1DA02000295A02F600A28790 /* MainMenuViewModel.swift */,
+				1DB9E9B4294A02B700FD4189 /* MainMenuViewController.swift */,
 			);
 			path = MainMenu_;
 			sourceTree = "<group>";
@@ -857,7 +863,6 @@
 				1DB9E9D1294A05A800FD4189 /* UIScrollViewHierarchy.swift in Sources */,
 				1DBBFDBB2967265E00BA9E69 /* DigimonsTableViewModel.swift in Sources */,
 				1D2FDC212950DBE1000CF9A7 /* Entity.swift in Sources */,
-				1DBBFDA2296703C400BA9E69 /* FilePrivateObject.swift in Sources */,
 				1DA7C803294CB28A009E1368 /* CreateImageView.swift in Sources */,
 				1D0A9A8229522BF30024137D /* LoginView.swift in Sources */,
 				1DBBFDBE29672CD200BA9E69 /* DigimonsFilterStackView.swift in Sources */,
@@ -886,6 +891,7 @@
 				1DBBEBB4294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift in Sources */,
 				1DB9E9B3294A02B700FD4189 /* SceneDelegate.swift in Sources */,
 				1DA02007295A101400A28790 /* RxView.swift in Sources */,
+				1DA1CE9B296888800097B3C9 /* ApiCaller.swift in Sources */,
 				1D4CDDF22954CEDC00F893BF /* CreateAlert.swift in Sources */,
 				1DBBEBB6294B847A00739C73 /* FakeBookView.swift in Sources */,
 				1D4CDDF52954CF0D00F893BF /* UIAlertControllerHierarchy.swift in Sources */,
@@ -913,10 +919,12 @@
 				1D332CA029536E190080F61F /* ArrayViewController.swift in Sources */,
 				1D2FDC1B2950DBB9000CF9A7 /* View.swift in Sources */,
 				1DB9E9E2294A111F00FD4189 /* Video.swift in Sources */,
+				1DA1CE9929687C4A0097B3C9 /* GenericsExercices.swift in Sources */,
 				1DD185D8295DBC17002192F1 /* GradientView.swift in Sources */,
 				1D2FDC232950DBED000CF9A7 /* Router.swift in Sources */,
 				1DB9E9CC294A058400FD4189 /* UIViewConstraints.swift in Sources */,
 				1D2FDC192950CA8A000CF9A7 /* SpinnerView.swift in Sources */,
+				1DA30510296E0E9D0098A626 /* ExampleLoginView.swift in Sources */,
 				1DBBEBAF294B579900739C73 /* FakeBookViewController.swift in Sources */,
 				1DB9E9EF294A40C000FD4189 /* CreateLabel.swift in Sources */,
 				1DBBEBBC294B945400739C73 /* FakeBookNavigationCollectionViewCell.swift in Sources */,

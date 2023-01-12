@@ -23,3 +23,10 @@ extension AccessViewController: Setup {
         view.backgroundColor = .green
     }
 }
+
+class FilePrivateObject {
+    let accessControlViewController = AccessViewController()
+    func callLero() {
+//        accessControlViewController.printLero()
+    }
+}
