@@ -10,12 +10,12 @@ import UIKit
 final class DigimonsFilterStackView: UIStackView {
     let filterNameTextField: UITextField = {
         let filterNameTextField = UITextField()
-        filterNameTextField.backgroundColor = .purple
+        filterNameTextField.backgroundColor = .weakDark
         return filterNameTextField
     }()
     let filterLevelTextField: UITextField = {
         let filterLevelTextField = UITextField()
-        filterLevelTextField.backgroundColor = .systemGray
+        filterLevelTextField.backgroundColor = .weakDark
         return filterLevelTextField
     }()
     override init(frame: CGRect) {

@@ -9,7 +9,7 @@ import UIKit
 
 final class DigimonsView: UIView {
     private let filterStackView = DigimonsFilterStackView()
-    private let digimonsTableView = DigimonsTableView()
+    let digimonsTableView = DigimonsTableView()
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -27,6 +27,7 @@ final class DigimonsView: UIView {
 
 extension DigimonsView: Setup {
     func configure() {
+        backgroundColor = .reverseDark
         addSubviews([filterStackView, digimonsTableView])
         filterStackView.filterNameTextField.addTarget(self, action: #selector(filterNameTextFieldTarget),
                                                       for: .editingChanged)

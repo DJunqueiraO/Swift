@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol DigimonsTableViewDelegate: AnyObject {
+    func digimonsTableView(didSelect digimon: Digimon)
+}
+
 final class DigimonsTableView: UITableView {
     private var digimonsTableViewModel = DigimonsTableViewModel()
+    weak var digimonsTableViewDelegate: DigimonsTableViewDelegate?
     let cellIdentifier = "Cell"
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -35,6 +40,11 @@ extension DigimonsTableView: Setup {
 }
 
 extension DigimonsTableView: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        digimonsTableViewDelegate?.digimonsTableView(
+            didSelect: digimonsTableViewModel.getDigimon(indexPath.row)
+        )
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return digimonsTableViewModel.numberOfDigimons
     }
