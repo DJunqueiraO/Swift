@@ -17,6 +17,13 @@ final class DigimonsViewController: UIViewController {
 
 extension DigimonsViewController: Setup {
     func configure() {
-        view = DigimonsView()
+        view = digimonsView
+        digimonsView.digimonsTableView.digimonsTableViewDelegate = self
+    }
+}
+
+extension DigimonsViewController: DigimonsTableViewDelegate {
+    func digimonsTableView(didSelect digimon: Digimon) {
+        navigationController?.navigate(to: DigimonViewController(digimon))
     }
 }

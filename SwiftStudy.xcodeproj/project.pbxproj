@@ -36,6 +36,8 @@
 		1D66F434294D28AD00797CDF /* FakeBookPostsApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F433294D273D00797CDF /* FakeBookPostsApi.json */; };
 		1D66F436294D290500797CDF /* FakeBookStoriesApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F435294D290500797CDF /* FakeBookStoriesApi.json */; };
 		1D66F438294D29A300797CDF /* FakeBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F437294D29A300797CDF /* FakeBookViewModel.swift */; };
+		1D8B58B1297353B30027009C /* DigimonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B58B0297353B30027009C /* DigimonViewController.swift */; };
+		1D8B58B3297354100027009C /* DigimonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B58B2297354100027009C /* DigimonView.swift */; };
 		1DA01FFB295A02B200A28790 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA01FFA295A02B200A28790 /* RxCocoa */; };
 		1DA01FFD295A02B200A28790 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA01FFC295A02B200A28790 /* RxRelay */; };
 		1DA01FFF295A02B200A28790 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA01FFE295A02B200A28790 /* RxSwift */; };
@@ -146,6 +148,8 @@
 		1D66F433294D273D00797CDF /* FakeBookPostsApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FakeBookPostsApi.json; sourceTree = "<group>"; };
 		1D66F435294D290500797CDF /* FakeBookStoriesApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FakeBookStoriesApi.json; sourceTree = "<group>"; };
 		1D66F437294D29A300797CDF /* FakeBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookViewModel.swift; sourceTree = "<group>"; };
+		1D8B58B0297353B30027009C /* DigimonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonViewController.swift; sourceTree = "<group>"; };
+		1D8B58B2297354100027009C /* DigimonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonView.swift; sourceTree = "<group>"; };
 		1DA02000295A02F600A28790 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
 		1DA02004295A07D600A28790 /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
 		1DA02006295A101400A28790 /* RxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxView.swift; sourceTree = "<group>"; };
@@ -360,6 +364,15 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		1D8B58AF297353960027009C /* Digimon */ = {
+			isa = PBXGroup;
+			children = (
+				1D8B58B0297353B30027009C /* DigimonViewController.swift */,
+				1D8B58B2297354100027009C /* DigimonView.swift */,
+			);
+			path = Digimon;
+			sourceTree = "<group>";
+		};
 		1DA02003295A07BB00A28790 /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
@@ -524,19 +537,19 @@
 		1DB9E9D2294A09D300FD4189 /* MainMenu */ = {
 			isa = PBXGroup;
 			children = (
-				1DB9E9E4294A135200FD4189 /* MainMenu_ */,
-				1DF4B455297075FF00B3F139 /* FullCourse */,
-				1DBBFDA829670D6200BA9E69 /* Digimons */,
+				1DB9E9D4294A0A0F00FD4189 /* Access */,
+				1D332C9E29536DFF0080F61F /* ArrayNDGenerics */,
 				1DD185E1295DDF73002192F1 /* Call */,
 				1DD185D6295DBC02002192F1 /* CrazyGradient */,
-				1DA02003295A07BB00A28790 /* RxSwift */,
-				1D332C9E29536DFF0080F61F /* ArrayNDGenerics */,
+				1DB9E9DE294A0FA300FD4189 /* DataSource */,
+				1DBBFDA829670D6200BA9E69 /* Digimons */,
 				1DBBEBAD294B576B00739C73 /* Fakebook */,
+				1DF4B455297075FF00B3F139 /* FullCourse */,
+				1D0A9A8029522BE40024137D /* Login */,
+				1DB9E9E4294A135200FD4189 /* MainMenu_ */,
+				1DA02003295A07BB00A28790 /* RxSwift */,
 				1DB9E9E9294A3A8800FD4189 /* Spinner */,
 				1DB9E9E8294A397100FD4189 /* Viper */,
-				1DB9E9DE294A0FA300FD4189 /* DataSource */,
-				1DB9E9D4294A0A0F00FD4189 /* Access */,
-				1D0A9A8029522BE40024137D /* Login */,
 			);
 			path = MainMenu;
 			sourceTree = "<group>";
@@ -672,6 +685,7 @@
 		1DBBFDA829670D6200BA9E69 /* Digimons */ = {
 			isa = PBXGroup;
 			children = (
+				1D8B58AF297353960027009C /* Digimon */,
 				1DBBFDB22967143400BA9E69 /* DigimonsLayout */,
 				1DBBFDB12967141B00BA9E69 /* DigimonsNetwork */,
 			);
@@ -708,9 +722,9 @@
 		1DBBFDB629671A7E00BA9E69 /* DigimonsTableView */ = {
 			isa = PBXGroup;
 			children = (
-				1DBBFDB32967145200BA9E69 /* DigimonTableViewCell.swift */,
-				1DBBFDBA2967265E00BA9E69 /* DigimonsTableViewModel.swift */,
 				1DBBFDAF2967132A00BA9E69 /* DigimonsTableView.swift */,
+				1DBBFDBA2967265E00BA9E69 /* DigimonsTableViewModel.swift */,
+				1DBBFDB32967145200BA9E69 /* DigimonTableViewCell.swift */,
 			);
 			path = DigimonsTableView;
 			sourceTree = "<group>";
@@ -916,6 +930,7 @@
 				1DA7C7F8294C9CCA009E1368 /* FakeBookPostStackView.swift in Sources */,
 				1DB9E9E7294A198800FD4189 /* StringRemove.swift in Sources */,
 				1DA0200D295A208D00A28790 /* RxViewModel.swift in Sources */,
+				1D8B58B1297353B30027009C /* DigimonViewController.swift in Sources */,
 				1DB9E9B5294A02B700FD4189 /* MainMenuViewController.swift in Sources */,
 				1DA0200F295A22DF00A28790 /* RxTableViewCell.swift in Sources */,
 				1DA02005295A07D600A28790 /* RxViewController.swift in Sources */,
@@ -955,6 +970,7 @@
 				1DBBFDA4296703F500BA9E69 /* Digimon.swift in Sources */,
 				1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */,
 				1DBBFDAC29670E2600BA9E69 /* DigimonsView.swift in Sources */,
+				1D8B58B3297354100027009C /* DigimonView.swift in Sources */,
 				1DD185DC295DD285002192F1 /* NetworkDecode.swift in Sources */,
 				1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */,
 				1D332CA029536E190080F61F /* ArrayViewController.swift in Sources */,

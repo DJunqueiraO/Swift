@@ -42,9 +42,9 @@ extension FullCourseTableView: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FullCourseTableView.cellIdentifier,
-                                                 for: indexPath) as? FullCourseTableViewCell ?? FullCourseTableViewCell()
-        cell.setup(text: "\t\(type(of: viewControllers[indexPath.row]))".removeLast(13))
-        return cell
+                                                 for: indexPath) as? FullCourseTableViewCell
+        cell?.setup(text: "\t\(type(of: viewControllers[indexPath.row]))".removeLast(13))
+        return cell ?? UITableViewCell()
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableView.frame.height*0.1
