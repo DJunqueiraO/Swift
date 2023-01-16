@@ -18,6 +18,7 @@ struct MainMenuViewModel {
                                    RxSwiftViewController(),
                                    LoginViewController(),
                                    FullCourseViewController(),
+                                   ReduceViewController(),
                                    CrazyGradientViewController(),
                                    GradientView.asHostingController,
 //                                   UserRouter.start().entry as Any,
@@ -28,12 +29,16 @@ struct MainMenuViewModel {
         return viewController
     }
     func setup(_ cell: UITableViewCell, cellForRowAt indexPath: IndexPath) {
-        cell.backgroundColor = .yellow
 //        guard let viewController = viewControllers[indexPath.row] as? UIViewController else {return cell}
-        let label = Create.element.label("\(type(of: viewControllers[indexPath.row]))")
-        label.textColor = .black
+        let label: UILabel = {
+            let label = Create.element.label("\(type(of: viewControllers[indexPath.row]))")
+            label.textColor = .black
+            label.backgroundColor = .yellow
+            label.textAlignment = .center
+            return label
+        }()
         cell.contentView.addSubview(label)
         label.enableAutoLayout
-            .constraint(attributes: [.centerX, .centerY])
+            .constraint(attributes: [.top, .leading, .trailing, .bottom])
     }
 }
