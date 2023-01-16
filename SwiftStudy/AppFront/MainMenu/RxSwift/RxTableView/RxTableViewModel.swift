@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-struct RxViewModel {
+struct RxTableViewModel {
     private let choses = [Chose(name: "Stone", image: "0"),
                           Chose(name: "Paper", image: "1"),
                           Chose(name: "Scissors", image: "2"),

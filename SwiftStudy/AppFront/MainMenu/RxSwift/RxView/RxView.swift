@@ -10,36 +10,20 @@ import RxSwift
 import RxCocoa
 
 final class RxView: UIView, UIScrollViewDelegate {
-    private var rxViewModel = RxViewModel()
-    private let player: (imageView: UIImageView, label: UILabel) = {
+    private let playerImageView: UIImageView = {
         let playerImageView = Create.element.imageView()
         playerImageView.backgroundColor = .jokenpoPink
-        let playerLabel = UILabel()
-        playerLabel.text = "Lero"
-        return (imageView: playerImageView, label: playerLabel)
+        return playerImageView
     }()
-    private lazy var scoreStackView: UIStackView = {
-        let scoreStackView = Create.element.stackView(arrangedSubviews: [player.label, cpu.label])
-        scoreStackView.backgroundColor = .jokenpoPink
-        return scoreStackView
-    }()
-    private let cpu: (imageView: UIImageView, label: UILabel) = {
+    private let cpuImageView: UIImageView = {
         let cpuImageView = Create.element.imageView()
         cpuImageView.backgroundColor = .jokenpoPink
-        let cpuLabel = UILabel()
-        cpuLabel.text = " Lero"
-        return (imageView: cpuImageView, label: cpuLabel)
+        return cpuImageView
     }()
-    private lazy var tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.backgroundColor = .systemPurple
-        let identifier = "Cell"
-        rxViewModel.items.bind(to: tableView.rx.items(cellIdentifier: identifier)) {tableView, item, cell in
-            guard let cell = cell as? RxTableViewCell else {return}
-            cell.item = item
-        }.disposed(by: rxViewModel.disposeBag)
-        tableView.rx.setDelegate(self).disposed(by: rxViewModel.disposeBag)
-        tableView.register(RxTableViewCell.self, forCellReuseIdentifier: identifier)
+    private lazy var scoreStackView = RxStackView()
+    private lazy var tableView: RxTableView = {
+        let tableView = RxTableView()
+        tableView.rxTableViewDelegate = self
         return tableView
     }()
     override init(frame: CGRect) {
@@ -54,13 +38,13 @@ final class RxView: UIView, UIScrollViewDelegate {
 extension RxView: Setup {
     func configure() {
         backgroundColor = .magenta
-        addSubviews([tableView, player.imageView, scoreStackView, cpu.imageView])
+        addSubviews([tableView, playerImageView, scoreStackView, cpuImageView])
     }
     func constrain() {
         tableView.enableAutoLayout
             .constraint(attributes: [.top, .leading, .trailing], to: safeAreaLayoutGuide)
             .constraint(attributesAttributes: [.bottom: .centerY])
-        player.imageView.enableAutoLayout
+        playerImageView.enableAutoLayout
             .constraint(attributes: [.bottom, .leading], to: safeAreaLayoutGuide)
             .constraint(attributesAttributes: [.top: .centerY])
             .constraint(attribute: .width, multiplier: 1/3)
@@ -68,26 +52,21 @@ extension RxView: Setup {
             .constraint(attributes: [.bottom, .centerX], to: safeAreaLayoutGuide)
             .constraint(attributesAttributes: [.top: .centerY])
             .constraint(attribute: .width, multiplier: 1/3)
-        cpu.imageView.enableAutoLayout
+        cpuImageView.enableAutoLayout
             .constraint(attributes: [.bottom, .trailing], to: safeAreaLayoutGuide)
             .constraint(attributesAttributes: [.top: .centerY])
             .constraint(attribute: .width, multiplier: 1/3)
     }
 }
 
-extension RxView: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let cell = tableView.cellForRow(at: indexPath) as? RxTableViewCell,
-              let image = cell.item?.image else {return}
-        player.imageView.image = UIImage(named: image)
-        
-        rxViewModel.items.bind {possibleChoses in
-            let cpuChose = Int.random(in: 0...possibleChoses.count-1)
-            guard let image = possibleChoses[cpuChose].image else {return}
-            self.cpu.imageView.image = UIImage(named: image)
-        }.disposed(by: rxViewModel.disposeBag)
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.frame.height*0.2
+extension RxView: RxTableViewDelegate {
+    func rxTableView(didPlayed chose: (player: String, cpu: String)) {
+        playerImageView.image = UIImage(named: chose.player)
+        cpuImageView.image = UIImage(named: chose.cpu)
+        guard let player = Int(chose.player), let cpu = Int(chose.cpu) else {return}
+        Jokenpo.play(player: player, cpu: cpu)
+        scoreStackView.updateScore(wins: Jokenpo.getWins,
+                                   draw: Jokenpo.getDraws,
+                                   lose: Jokenpo.getLoses)
     }
 }
