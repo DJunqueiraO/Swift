@@ -41,11 +41,12 @@
 		1D9EA3902975ADA00032A47C /* RxTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9EA38F2975ADA00032A47C /* RxTableView.swift */; };
 		1D9EA3932975B80F0032A47C /* Jokenpo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9EA3922975B80F0032A47C /* Jokenpo.swift */; };
 		1D9EA3952975BBB50032A47C /* RxStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9EA3942975BBB50032A47C /* RxStackView.swift */; };
+		1D9EA3992975C5EC0032A47C /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9EA3982975C5EC0032A47C /* RxSwiftViewController.swift */; };
 		1DA01FFB295A02B200A28790 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA01FFA295A02B200A28790 /* RxCocoa */; };
 		1DA01FFD295A02B200A28790 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA01FFC295A02B200A28790 /* RxRelay */; };
 		1DA01FFF295A02B200A28790 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA01FFE295A02B200A28790 /* RxSwift */; };
 		1DA02001295A02F600A28790 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA02000295A02F600A28790 /* MainMenuViewModel.swift */; };
-		1DA02005295A07D600A28790 /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA02004295A07D600A28790 /* RxViewController.swift */; };
+		1DA02005295A07D600A28790 /* JokenpoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA02004295A07D600A28790 /* JokenpoViewController.swift */; };
 		1DA02007295A101400A28790 /* RxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA02006295A101400A28790 /* RxView.swift */; };
 		1DA02009295A1DB600A28790 /* RxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA02008295A1DB600A28790 /* RxModel.swift */; };
 		1DA0200D295A208D00A28790 /* RxTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA0200C295A208D00A28790 /* RxTableViewModel.swift */; };
@@ -87,7 +88,6 @@
 		1DBBEBBE294B9D1C00739C73 /* FakeBookStatusStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBBD294B9D1C00739C73 /* FakeBookStatusStackView.swift */; };
 		1DBBEBC1294B9E1000739C73 /* UIStackViewHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */; };
 		1DBBEBC3294BA26000739C73 /* FakeBookStoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBC2294BA26000739C73 /* FakeBookStoriesCollectionView.swift */; };
-		1DBBFDA4296703F500BA9E69 /* Digimon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDA3296703F500BA9E69 /* Digimon.swift */; };
 		1DBBFDA729670CAF00BA9E69 /* URLEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDA629670CAF00BA9E69 /* URLEndPoints.swift */; };
 		1DBBFDAA29670D7C00BA9E69 /* DigimonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDA929670D7C00BA9E69 /* DigimonsViewController.swift */; };
 		1DBBFDAC29670E2600BA9E69 /* DigimonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBFDAB29670E2600BA9E69 /* DigimonsView.swift */; };
@@ -156,8 +156,9 @@
 		1D9EA38F2975ADA00032A47C /* RxTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableView.swift; sourceTree = "<group>"; };
 		1D9EA3922975B80F0032A47C /* Jokenpo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jokenpo.swift; sourceTree = "<group>"; };
 		1D9EA3942975BBB50032A47C /* RxStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxStackView.swift; sourceTree = "<group>"; };
+		1D9EA3982975C5EC0032A47C /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
 		1DA02000295A02F600A28790 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
-		1DA02004295A07D600A28790 /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
+		1DA02004295A07D600A28790 /* JokenpoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokenpoViewController.swift; sourceTree = "<group>"; };
 		1DA02006295A101400A28790 /* RxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxView.swift; sourceTree = "<group>"; };
 		1DA02008295A1DB600A28790 /* RxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxModel.swift; sourceTree = "<group>"; };
 		1DA0200C295A208D00A28790 /* RxTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewModel.swift; sourceTree = "<group>"; };
@@ -201,7 +202,6 @@
 		1DBBEBBD294B9D1C00739C73 /* FakeBookStatusStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStatusStackView.swift; sourceTree = "<group>"; };
 		1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewHierarchy.swift; sourceTree = "<group>"; };
 		1DBBEBC2294BA26000739C73 /* FakeBookStoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionView.swift; sourceTree = "<group>"; };
-		1DBBFDA3296703F500BA9E69 /* Digimon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digimon.swift; sourceTree = "<group>"; };
 		1DBBFDA629670CAF00BA9E69 /* URLEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndPoints.swift; sourceTree = "<group>"; };
 		1DBBFDA929670D7C00BA9E69 /* DigimonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonsViewController.swift; sourceTree = "<group>"; };
 		1DBBFDAB29670E2600BA9E69 /* DigimonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonsView.swift; sourceTree = "<group>"; };
@@ -396,7 +396,15 @@
 			path = RxStackView;
 			sourceTree = "<group>";
 		};
-		1DA02003295A07BB00A28790 /* RxSwift */ = {
+		1D9EA3972975C5D70032A47C /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				1D9EA3982975C5EC0032A47C /* RxSwiftViewController.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		1DA02003295A07BB00A28790 /* RxSwiftJokenpo */ = {
 			isa = PBXGroup;
 			children = (
 				1D9EA3962975BC5A0032A47C /* RxStackView */,
@@ -404,13 +412,13 @@
 				1DA0200B295A207C00A28790 /* RxView */,
 				1DA0200A295A207300A28790 /* RxViewController */,
 			);
-			path = RxSwift;
+			path = RxSwiftJokenpo;
 			sourceTree = "<group>";
 		};
 		1DA0200A295A207300A28790 /* RxViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1DA02004295A07D600A28790 /* RxViewController.swift */,
+				1DA02004295A07D600A28790 /* JokenpoViewController.swift */,
 			);
 			path = RxViewController;
 			sourceTree = "<group>";
@@ -496,12 +504,12 @@
 		1DB9E9C4294A02C000FD4189 /* AppUtils */ = {
 			isa = PBXGroup;
 			children = (
-				1D64957129526FF5008AB2D9 /* Objects */,
-				1D66F42E294D1E3C00797CDF /* Network */,
-				1D413989294BBA18005BFA16 /* SwiftUI */,
 				1DB9E9DB294A0AD700FD4189 /* Create */,
-				1DB9E9DA294A0AD000FD4189 /* Setup */,
 				1DB9E9C9294A055F00FD4189 /* Extensions */,
+				1D66F42E294D1E3C00797CDF /* Network */,
+				1D64957129526FF5008AB2D9 /* Objects */,
+				1DB9E9DA294A0AD000FD4189 /* Setup */,
+				1D413989294BBA18005BFA16 /* SwiftUI */,
 			);
 			path = AppUtils;
 			sourceTree = "<group>";
@@ -572,7 +580,8 @@
 				1DF4B455297075FF00B3F139 /* FullCourse */,
 				1D0A9A8029522BE40024137D /* Login */,
 				1DB9E9E4294A135200FD4189 /* MainMenu_ */,
-				1DA02003295A07BB00A28790 /* RxSwift */,
+				1D9EA3972975C5D70032A47C /* RxSwift */,
+				1DA02003295A07BB00A28790 /* RxSwiftJokenpo */,
 				1DB9E9E9294A3A8800FD4189 /* Spinner */,
 				1DB9E9E8294A397100FD4189 /* Viper */,
 			);
@@ -583,7 +592,6 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9D5294A0A2D00FD4189 /* AccessControllViewController.swift */,
-				1DBBFDA3296703F500BA9E69 /* Digimon.swift */,
 			);
 			path = Access;
 			sourceTree = "<group>";
@@ -959,7 +967,7 @@
 				1DB9E9B5294A02B700FD4189 /* MainMenuViewController.swift in Sources */,
 				1DA0200F295A22DF00A28790 /* RxTableViewCell.swift in Sources */,
 				1D9EA3902975ADA00032A47C /* RxTableView.swift in Sources */,
-				1DA02005295A07D600A28790 /* RxViewController.swift in Sources */,
+				1DA02005295A07D600A28790 /* JokenpoViewController.swift in Sources */,
 				1D0A9A86295233A00024137D /* LoginViewController.swift in Sources */,
 				1DBBFDAA29670D7C00BA9E69 /* DigimonsViewController.swift in Sources */,
 				1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */,
@@ -983,6 +991,7 @@
 				1DA7C809294CBE36009E1368 /* UIImageImages.swift in Sources */,
 				1DA7C80B294CBF94009E1368 /* FakeBookStory.swift in Sources */,
 				1DA02009295A1DB600A28790 /* RxModel.swift in Sources */,
+				1D9EA3992975C5EC0032A47C /* RxSwiftViewController.swift in Sources */,
 				1DBBEBC1294B9E1000739C73 /* UIStackViewHierarchy.swift in Sources */,
 				1DBBEBBE294B9D1C00739C73 /* FakeBookStatusStackView.swift in Sources */,
 				1D64956C29526C91008AB2D9 /* FakeBookPostPerfilStackView.swift in Sources */,
@@ -995,7 +1004,6 @@
 				1DBBFDB02967132A00BA9E69 /* DigimonsTableView.swift in Sources */,
 				1DD185DE295DD291002192F1 /* NetworkRead.swift in Sources */,
 				1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */,
-				1DBBFDA4296703F500BA9E69 /* Digimon.swift in Sources */,
 				1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */,
 				1DBBFDAC29670E2600BA9E69 /* DigimonsView.swift in Sources */,
 				1D8B58B3297354100027009C /* DigimonView.swift in Sources */,

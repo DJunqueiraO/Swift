@@ -7,14 +7,14 @@
 
 import UIKit
 
-final class RxViewController: UIViewController {
+final class JokenpoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
 }
 
-extension RxViewController: Setup {
+extension JokenpoViewController: Setup {
     func configure() {
         view = RxView()
     }
