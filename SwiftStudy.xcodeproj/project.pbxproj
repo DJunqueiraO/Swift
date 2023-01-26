@@ -24,6 +24,8 @@
 		1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */; };
 		1D41DBD52955D08E00C3C251 /* ArrayExercices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41DBD42955D08E00C3C251 /* ArrayExercices.swift */; };
 		1D41DBDA2955E9AF00C3C251 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41DBD92955E9AF00C3C251 /* CommentViewController.swift */; };
+		1D4B6A8F2982BB5400933BD8 /* CALayerDropColorsAsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B6A8E2982BB5400933BD8 /* CALayerDropColorsAsImage.swift */; };
+		1D4B6A912982BD5100933BD8 /* CALayerAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B6A902982BD5100933BD8 /* CALayerAnimate.swift */; };
 		1D4B6BA42951E11000E22C00 /* FakeBookPostButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B6BA32951E11000E22C00 /* FakeBookPostButtons.swift */; };
 		1D4CDDF22954CEDC00F893BF /* CreateAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CDDF12954CEDC00F893BF /* CreateAlert.swift */; };
 		1D4CDDF52954CF0D00F893BF /* UIAlertControllerHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CDDF42954CF0D00F893BF /* UIAlertControllerHierarchy.swift */; };
@@ -142,6 +144,8 @@
 		1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		1D41DBD42955D08E00C3C251 /* ArrayExercices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExercices.swift; sourceTree = "<group>"; };
 		1D41DBD92955E9AF00C3C251 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		1D4B6A8E2982BB5400933BD8 /* CALayerDropColorsAsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerDropColorsAsImage.swift; sourceTree = "<group>"; };
+		1D4B6A902982BD5100933BD8 /* CALayerAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerAnimate.swift; sourceTree = "<group>"; };
 		1D4B6BA32951E11000E22C00 /* FakeBookPostButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPostButtons.swift; sourceTree = "<group>"; };
 		1D4CDDF12954CEDC00F893BF /* CreateAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAlert.swift; sourceTree = "<group>"; };
 		1D4CDDF42954CF0D00F893BF /* UIAlertControllerHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerHierarchy.swift; sourceTree = "<group>"; };
@@ -347,6 +351,15 @@
 				1D41DBD92955E9AF00C3C251 /* CommentViewController.swift */,
 			);
 			path = Comment;
+			sourceTree = "<group>";
+		};
+		1D4B6A8D2982BB4000933BD8 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				1D4B6A8E2982BB5400933BD8 /* CALayerDropColorsAsImage.swift */,
+				1D4B6A902982BD5100933BD8 /* CALayerAnimate.swift */,
+			);
+			path = CALayer;
 			sourceTree = "<group>";
 		};
 		1D4CDDF32954CEF600F893BF /* UIAlertController */ = {
@@ -556,6 +569,7 @@
 		1DB9E9C9294A055F00FD4189 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1D4B6A8D2982BB4000933BD8 /* CALayer */,
 				1DBBFDA529670C9E00BA9E69 /* URL */,
 				1D4CDDF32954CEF600F893BF /* UIAlertController */,
 				1DBAAA1329511C6300098126 /* UIButton */,
@@ -982,6 +996,7 @@
 				1DA02001295A02F600A28790 /* MainMenuViewModel.swift in Sources */,
 				1DBBFDAE2967113400BA9E69 /* Digimons.swift in Sources */,
 				1D9EA39E2975D2700032A47C /* ReduceViewController.swift in Sources */,
+				1D4B6A912982BD5100933BD8 /* CALayerAnimate.swift in Sources */,
 				1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */,
 				1DD185E0295DD34F002192F1 /* Network.swift in Sources */,
 				1DA4960F2981EA84006453D5 /* UIViewAddGradient.swift in Sources */,
@@ -992,6 +1007,7 @@
 				1DA0200D295A208D00A28790 /* RxTableViewModel.swift in Sources */,
 				1D8B58B1297353B30027009C /* DigimonViewController.swift in Sources */,
 				1DB9E9B5294A02B700FD4189 /* MainMenuViewController.swift in Sources */,
+				1D4B6A8F2982BB5400933BD8 /* CALayerDropColorsAsImage.swift in Sources */,
 				1DA0200F295A22DF00A28790 /* RxTableViewCell.swift in Sources */,
 				1D9EA3902975ADA00032A47C /* RxTableView.swift in Sources */,
 				1DA02005295A07D600A28790 /* JokenpoViewController.swift in Sources */,

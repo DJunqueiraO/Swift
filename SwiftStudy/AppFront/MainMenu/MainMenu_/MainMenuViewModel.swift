@@ -11,7 +11,7 @@ struct MainMenuViewModel {
     private let viewControllers = [AccessViewController(),
                                    DataSourceViewController(),
                                    ArrayViewController(),
-                                   DigimonsViewController(),
+//                                   DigimonsViewController(),
                                    JokenpoViewController(),
                                    SpinnerViewController(),
                                    CallViewController(),
