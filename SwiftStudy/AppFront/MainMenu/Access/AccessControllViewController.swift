@@ -15,6 +15,7 @@ final class AccessViewController: UIViewController {
         super.viewDidLoad()
 //        FilePrivateObject().callLero()
         setup()
+        view.backgroundColor = .black
     }
 }
 

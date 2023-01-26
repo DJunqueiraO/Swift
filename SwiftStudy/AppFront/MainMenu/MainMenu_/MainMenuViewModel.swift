@@ -20,6 +20,7 @@ struct MainMenuViewModel {
                                    FullCourseViewController(),
                                    ReduceViewController(),
                                    CrazyGradientViewController(),
+                                   AnimationViewController(),
                                    GradientView.asHostingController,
 //                                   UserRouter.start().entry as Any,
                                    FakeBookViewController()]
