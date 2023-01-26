@@ -42,6 +42,7 @@
 		1D9EA3932975B80F0032A47C /* Jokenpo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9EA3922975B80F0032A47C /* Jokenpo.swift */; };
 		1D9EA3952975BBB50032A47C /* RxStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9EA3942975BBB50032A47C /* RxStackView.swift */; };
 		1D9EA3992975C5EC0032A47C /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9EA3982975C5EC0032A47C /* RxSwiftViewController.swift */; };
+		1D9EA39E2975D2700032A47C /* ReduceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9EA39D2975D2700032A47C /* ReduceViewController.swift */; };
 		1DA01FFB295A02B200A28790 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA01FFA295A02B200A28790 /* RxCocoa */; };
 		1DA01FFD295A02B200A28790 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA01FFC295A02B200A28790 /* RxRelay */; };
 		1DA01FFF295A02B200A28790 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA01FFE295A02B200A28790 /* RxSwift */; };
@@ -54,6 +55,8 @@
 		1DA1CE9929687C4A0097B3C9 /* GenericsExercices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1CE9829687C4A0097B3C9 /* GenericsExercices.swift */; };
 		1DA1CE9B296888800097B3C9 /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1CE9A296888800097B3C9 /* ApiCaller.swift */; };
 		1DA30510296E0E9D0098A626 /* ExampleLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3050F296E0E9D0098A626 /* ExampleLoginView.swift */; };
+		1DA4960D2981E764006453D5 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA4960C2981E764006453D5 /* AnimationViewController.swift */; };
+		1DA4960F2981EA84006453D5 /* UIViewAddGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA4960E2981EA84006453D5 /* UIViewAddGradient.swift */; };
 		1DA7C7F8294C9CCA009E1368 /* FakeBookPostStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7F7294C9CCA009E1368 /* FakeBookPostStackView.swift */; };
 		1DA7C7FF294CA92F009E1368 /* UIColorColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7FE294CA92F009E1368 /* UIColorColors.swift */; };
 		1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C800294CB27A009E1368 /* CreateStackView.swift */; };
@@ -157,6 +160,7 @@
 		1D9EA3922975B80F0032A47C /* Jokenpo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jokenpo.swift; sourceTree = "<group>"; };
 		1D9EA3942975BBB50032A47C /* RxStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxStackView.swift; sourceTree = "<group>"; };
 		1D9EA3982975C5EC0032A47C /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
+		1D9EA39D2975D2700032A47C /* ReduceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceViewController.swift; sourceTree = "<group>"; };
 		1DA02000295A02F600A28790 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
 		1DA02004295A07D600A28790 /* JokenpoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokenpoViewController.swift; sourceTree = "<group>"; };
 		1DA02006295A101400A28790 /* RxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxView.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 		1DA1CE9829687C4A0097B3C9 /* GenericsExercices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsExercices.swift; sourceTree = "<group>"; };
 		1DA1CE9A296888800097B3C9 /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
 		1DA3050F296E0E9D0098A626 /* ExampleLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleLoginView.swift; sourceTree = "<group>"; };
+		1DA4960C2981E764006453D5 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		1DA4960E2981EA84006453D5 /* UIViewAddGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAddGradient.swift; sourceTree = "<group>"; };
 		1DA7C7F7294C9CCA009E1368 /* FakeBookPostStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPostStackView.swift; sourceTree = "<group>"; };
 		1DA7C7FE294CA92F009E1368 /* UIColorColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorColors.swift; sourceTree = "<group>"; };
 		1DA7C800294CB27A009E1368 /* CreateStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStackView.swift; sourceTree = "<group>"; };
@@ -404,6 +410,14 @@
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
+		1D9EA39C2975D25D0032A47C /* Reduce */ = {
+			isa = PBXGroup;
+			children = (
+				1D9EA39D2975D2700032A47C /* ReduceViewController.swift */,
+			);
+			path = Reduce;
+			sourceTree = "<group>";
+		};
 		1DA02003295A07BB00A28790 /* RxSwiftJokenpo */ = {
 			isa = PBXGroup;
 			children = (
@@ -432,6 +446,14 @@
 				1D9EA3922975B80F0032A47C /* Jokenpo.swift */,
 			);
 			path = RxView;
+			sourceTree = "<group>";
+		};
+		1DA4960B2981E74B006453D5 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				1DA4960C2981E764006453D5 /* AnimationViewController.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		1DA7C7F6294C9CA7009E1368 /* FakeBookPostView */ = {
@@ -555,6 +577,7 @@
 				1DB9E9CD294A059100FD4189 /* UIViewHierarchy.swift */,
 				1DBBEBB9294B920400739C73 /* UIViewUnderline.swift */,
 				1D6495692952670C008AB2D9 /* UIViewScreen.swift */,
+				1DA4960E2981EA84006453D5 /* UIViewAddGradient.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -571,6 +594,7 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9D4294A0A0F00FD4189 /* Access */,
+				1DA4960B2981E74B006453D5 /* Animation */,
 				1D332C9E29536DFF0080F61F /* ArrayNDGenerics */,
 				1DD185E1295DDF73002192F1 /* Call */,
 				1DD185D6295DBC02002192F1 /* CrazyGradient */,
@@ -580,6 +604,7 @@
 				1DF4B455297075FF00B3F139 /* FullCourse */,
 				1D0A9A8029522BE40024137D /* Login */,
 				1DB9E9E4294A135200FD4189 /* MainMenu_ */,
+				1D9EA39C2975D25D0032A47C /* Reduce */,
 				1D9EA3972975C5D70032A47C /* RxSwift */,
 				1DA02003295A07BB00A28790 /* RxSwiftJokenpo */,
 				1DB9E9E9294A3A8800FD4189 /* Spinner */,
@@ -956,8 +981,10 @@
 				1DB9E9CE294A059100FD4189 /* UIViewHierarchy.swift in Sources */,
 				1DA02001295A02F600A28790 /* MainMenuViewModel.swift in Sources */,
 				1DBBFDAE2967113400BA9E69 /* Digimons.swift in Sources */,
+				1D9EA39E2975D2700032A47C /* ReduceViewController.swift in Sources */,
 				1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */,
 				1DD185E0295DD34F002192F1 /* Network.swift in Sources */,
+				1DA4960F2981EA84006453D5 /* UIViewAddGradient.swift in Sources */,
 				1D41DBD52955D08E00C3C251 /* ArrayExercices.swift in Sources */,
 				1D66F430294D1E4D00797CDF /* NetworkHTTPMethods.swift in Sources */,
 				1DA7C7F8294C9CCA009E1368 /* FakeBookPostStackView.swift in Sources */,
@@ -1007,6 +1034,7 @@
 				1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */,
 				1DBBFDAC29670E2600BA9E69 /* DigimonsView.swift in Sources */,
 				1D8B58B3297354100027009C /* DigimonView.swift in Sources */,
+				1DA4960D2981E764006453D5 /* AnimationViewController.swift in Sources */,
 				1DD185DC295DD285002192F1 /* NetworkDecode.swift in Sources */,
 				1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */,
 				1D332CA029536E190080F61F /* ArrayViewController.swift in Sources */,

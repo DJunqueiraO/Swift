@@ -46,7 +46,6 @@ final class RxSwiftViewController: UIViewController {
 extension RxSwiftViewController: Setup {
     func configure() {
         view.backgroundColor = .white
-//        testSubjects()
         let publishRelay = PublishRelay<String>()
         publishRelay.accept("Lero Lero")
         let _ = publishRelay.subscribe {element in
